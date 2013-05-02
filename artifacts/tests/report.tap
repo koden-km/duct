@@ -1,0 +1,114 @@
+TAP version 13
+ok 1 - Icecave\Duct\LexerTest::testFeedEmitsIntegerAfterNonDigit
+ok 2 - Icecave\Duct\LexerTest::testFeedEmitsMultipleIntegers
+ok 3 - Icecave\Duct\LexerTest::testFeedIntegerThenNonInteger
+ok 4 - Icecave\Duct\LexerTest::testFeedZeroIntegerThenNonInteger
+ok 5 - Icecave\Duct\LexerTest::testFeedFloatThenNonInteger
+ok 6 - Icecave\Duct\LexerTest::testFeedExponentThenNonInteger
+ok 7 - Icecave\Duct\LexerTest::testFeedFailsOnInvalidBeginningCharacter
+ok 8 - Icecave\Duct\LexerTest::testFeedFailsOnInvalidEscapeSequence
+ok 9 - Icecave\Duct\LexerTest::testFeedFailsOnInvalidUnicodeEscapeSequence
+ok 10 - Icecave\Duct\LexerTest::testFeedFailsOnNonDigitAfterNegativeSign
+ok 11 - Icecave\Duct\LexerTest::testFeedFailsOnNonDigitAfterDecimalPoint
+ok 12 - Icecave\Duct\LexerTest::testFeedFailsOnNonDigitAfterExponentE
+ok 13 - Icecave\Duct\LexerTest::testFeedFailsOnMispelledTrue
+ok 14 - Icecave\Duct\LexerTest::testFeedFailsOnMispelledFalse
+ok 15 - Icecave\Duct\LexerTest::testFeedFailsOnMispelledNull
+ok 16 - Icecave\Duct\LexerTest::testFeedFailsOnMultipleHighSurrogates
+ok 17 - Icecave\Duct\LexerTest::testFeedFailsOnMissingHighSurrogate
+ok 18 - Icecave\Duct\LexerTest::testFeedFailsOnMissingLowSurrogateEndString
+ok 19 - Icecave\Duct\LexerTest::testFeedFailsOnMissingLowSurrogateRegularCharacter
+ok 20 - Icecave\Duct\LexerTest::testFeedFailsOnMissingLowSurrogateRegularNonUnicodeEscape
+ok 21 - Icecave\Duct\LexerTest::testFeedPartialMultibyteCharacter
+ok 22 - Icecave\Duct\LexerTest::testFinalizeFailsWithPartialLiteral with data set #0 ('-')
+ok 23 - Icecave\Duct\LexerTest::testFinalizeFailsWithPartialLiteral with data set #1 ('1e')
+ok 24 - Icecave\Duct\LexerTest::testFinalizeFailsWithPartialLiteral with data set #2 ('"foo')
+ok 25 - Icecave\Duct\LexerTest::testFinalizeFailsWithPartialLiteral with data set #3 ('"foo\\')
+ok 26 - Icecave\Duct\LexerTest::testFinalizeFailsWithPartialLiteral with data set #4 ('"foo\\uA')
+ok 27 - Icecave\Duct\LexerTest::testFinalizeFailsWithPartialLiteral with data set #5 ('tru')
+ok 28 - Icecave\Duct\LexerTest::testFinalizeFailsWithPartialLiteral with data set #6 ('fals')
+ok 29 - Icecave\Duct\LexerTest::testFinalizeFailsWithPartialLiteral with data set #7 ('nul')
+ok 30 - Icecave\Duct\LexerTest::testLexWithSingleToken with data set #0 ('{', Icecave\Duct\Token)
+ok 31 - Icecave\Duct\LexerTest::testLexWithSingleToken with data set #1 ('}', Icecave\Duct\Token)
+ok 32 - Icecave\Duct\LexerTest::testLexWithSingleToken with data set #2 ('[', Icecave\Duct\Token)
+ok 33 - Icecave\Duct\LexerTest::testLexWithSingleToken with data set #3 (']', Icecave\Duct\Token)
+ok 34 - Icecave\Duct\LexerTest::testLexWithSingleToken with data set #4 (':', Icecave\Duct\Token)
+ok 35 - Icecave\Duct\LexerTest::testLexWithSingleToken with data set #5 (',', Icecave\Duct\Token)
+ok 36 - Icecave\Duct\LexerTest::testLexWithSingleToken with data set #6 ('true', Icecave\Duct\Token)
+ok 37 - Icecave\Duct\LexerTest::testLexWithSingleToken with data set #7 ('false', Icecave\Duct\Token)
+ok 38 - Icecave\Duct\LexerTest::testLexWithSingleToken with data set #8 ('null', Icecave\Duct\Token)
+ok 39 - Icecave\Duct\LexerTest::testLexWithSingleToken with data set #9 ('0', Icecave\Duct\Token)
+ok 40 - Icecave\Duct\LexerTest::testLexWithSingleToken with data set #10 ('-0', Icecave\Duct\Token)
+ok 41 - Icecave\Duct\LexerTest::testLexWithSingleToken with data set #11 ('1', Icecave\Duct\Token)
+ok 42 - Icecave\Duct\LexerTest::testLexWithSingleToken with data set #12 ('-1', Icecave\Duct\Token)
+ok 43 - Icecave\Duct\LexerTest::testLexWithSingleToken with data set #13 ('12345', Icecave\Duct\Token)
+ok 44 - Icecave\Duct\LexerTest::testLexWithSingleToken with data set #14 ('-12345', Icecave\Duct\Token)
+ok 45 - Icecave\Duct\LexerTest::testLexWithSingleToken with data set #15 ('0.0', Icecave\Duct\Token)
+ok 46 - Icecave\Duct\LexerTest::testLexWithSingleToken with data set #16 ('-0.0', Icecave\Duct\Token)
+ok 47 - Icecave\Duct\LexerTest::testLexWithSingleToken with data set #17 ('1.1', Icecave\Duct\Token)
+ok 48 - Icecave\Duct\LexerTest::testLexWithSingleToken with data set #18 ('-1.1', Icecave\Duct\Token)
+ok 49 - Icecave\Duct\LexerTest::testLexWithSingleToken with data set #19 ('123.123', Icecave\Duct\Token)
+ok 50 - Icecave\Duct\LexerTest::testLexWithSingleToken with data set #20 ('-123.123', Icecave\Duct\Token)
+ok 51 - Icecave\Duct\LexerTest::testLexWithSingleToken with data set #21 ('0e5', Icecave\Duct\Token)
+ok 52 - Icecave\Duct\LexerTest::testLexWithSingleToken with data set #22 ('0E5', Icecave\Duct\Token)
+ok 53 - Icecave\Duct\LexerTest::testLexWithSingleToken with data set #23 ('1e5', Icecave\Duct\Token)
+ok 54 - Icecave\Duct\LexerTest::testLexWithSingleToken with data set #24 ('1E5', Icecave\Duct\Token)
+ok 55 - Icecave\Duct\LexerTest::testLexWithSingleToken with data set #25 ('1e10', Icecave\Duct\Token)
+ok 56 - Icecave\Duct\LexerTest::testLexWithSingleToken with data set #26 ('1E10', Icecave\Duct\Token)
+ok 57 - Icecave\Duct\LexerTest::testLexWithSingleToken with data set #27 ('1e+5', Icecave\Duct\Token)
+ok 58 - Icecave\Duct\LexerTest::testLexWithSingleToken with data set #28 ('1E+5', Icecave\Duct\Token)
+ok 59 - Icecave\Duct\LexerTest::testLexWithSingleToken with data set #29 ('1e+10', Icecave\Duct\Token)
+ok 60 - Icecave\Duct\LexerTest::testLexWithSingleToken with data set #30 ('1E+10', Icecave\Duct\Token)
+ok 61 - Icecave\Duct\LexerTest::testLexWithSingleToken with data set #31 ('1e-5', Icecave\Duct\Token)
+ok 62 - Icecave\Duct\LexerTest::testLexWithSingleToken with data set #32 ('1E-5', Icecave\Duct\Token)
+ok 63 - Icecave\Duct\LexerTest::testLexWithSingleToken with data set #33 ('1e-10', Icecave\Duct\Token)
+ok 64 - Icecave\Duct\LexerTest::testLexWithSingleToken with data set #34 ('1E-10', Icecave\Duct\Token)
+ok 65 - Icecave\Duct\LexerTest::testLexWithSingleToken with data set #35 ('0.1e10', Icecave\Duct\Token)
+ok 66 - Icecave\Duct\LexerTest::testLexWithSingleToken with data set #36 ('0.1E10', Icecave\Duct\Token)
+ok 67 - Icecave\Duct\LexerTest::testLexWithSingleToken with data set #37 ('""', Icecave\Duct\Token)
+ok 68 - Icecave\Duct\LexerTest::testLexWithSingleToken with data set #38 ('"foo"', Icecave\Duct\Token)
+ok 69 - Icecave\Duct\LexerTest::testLexWithSingleToken with data set #39 ('"foo bar"', Icecave\Duct\Token)
+ok 70 - Icecave\Duct\LexerTest::testLexWithSingleToken with data set #40 ('"\\""', Icecave\Duct\Token)
+ok 71 - Icecave\Duct\LexerTest::testLexWithSingleToken with data set #41 ('"\\\\"', Icecave\Duct\Token)
+ok 72 - Icecave\Duct\LexerTest::testLexWithSingleToken with data set #42 ('"\\/"', Icecave\Duct\Token)
+ok 73 - Icecave\Duct\LexerTest::testLexWithSingleToken with data set #43 ('"\\b"', Icecave\Duct\Token)
+ok 74 - Icecave\Duct\LexerTest::testLexWithSingleToken with data set #44 ('"\\f"', Icecave\Duct\Token)
+ok 75 - Icecave\Duct\LexerTest::testLexWithSingleToken with data set #45 ('"\\n"', Icecave\Duct\Token)
+ok 76 - Icecave\Duct\LexerTest::testLexWithSingleToken with data set #46 ('"\\r"', Icecave\Duct\Token)
+ok 77 - Icecave\Duct\LexerTest::testLexWithSingleToken with data set #47 ('"\\t"', Icecave\Duct\Token)
+ok 78 - Icecave\Duct\LexerTest::testLexWithSingleToken with data set #48 ('"\\u00a9"', Icecave\Duct\Token)
+ok 79 - Icecave\Duct\LexerTest::testLexWithSingleToken with data set #49 ('"\\ud834\\udD1E"', Icecave\Duct\Token)
+ok 80 - Icecave\Duct\ParserTest::testParse with data set #0 ('{}')
+ok 81 - Icecave\Duct\ParserTest::testParse with data set #1 ('[]')
+ok 82 - Icecave\Duct\ParserTest::testParse with data set #2 ('{ "a" : 1, "b" : 2, "c" : 3 }')
+ok 83 - Icecave\Duct\ParserTest::testParse with data set #3 ('{ "a" : 1, "nested" : { "b" : 2, "c" : 3, "d" : 4 }, "e" : 5 }')
+ok 84 - Icecave\Duct\ParserTest::testParse with data set #4 ('[ 1, 2, 3 ]')
+ok 85 - Icecave\Duct\ParserTest::testParse with data set #5 ('[ 1, [ 2, 3, 4 ], 5 ]')
+ok 86 - Icecave\Duct\TokenStreamParserTest::testFinalizeFailsWithPartialObject
+ok 87 - Icecave\Duct\TokenStreamParserTest::testFinalizeFailsWithPartialArray
+ok 88 - Icecave\Duct\TokenStreamParserTest::testFeedFailsOnNonStringKey
+ok 89 - Icecave\Duct\TokenStreamParserTest::testFeedFailsUnexpectedTokenAfterObjectKey
+ok 90 - Icecave\Duct\TokenStreamParserTest::testFeedFailsUnexpectedTokenAfterObjectValue
+ok 91 - Icecave\Duct\TokenStreamParserTest::testFeedFailsUnexpectedTokenAfterArrayValue
+ok 92 - Icecave\Duct\TokenStreamParserTest::testFeedFailsOnInvalidStartingToken with data set #0 ('}')
+ok 93 - Icecave\Duct\TokenStreamParserTest::testFeedFailsOnInvalidStartingToken with data set #1 (']')
+ok 94 - Icecave\Duct\TokenStreamParserTest::testFeedFailsOnInvalidStartingToken with data set #2 (':')
+ok 95 - Icecave\Duct\TokenStreamParserTest::testFeedFailsOnInvalidStartingToken with data set #3 (',')
+ok 96 - Icecave\Duct\TokenStreamParserTest::testParse with data set #0 (array(1), 1)
+ok 97 - Icecave\Duct\TokenStreamParserTest::testParse with data set #1 (array(1.1), 1.1)
+ok 98 - Icecave\Duct\TokenStreamParserTest::testParse with data set #2 (array(true), true)
+ok 99 - Icecave\Duct\TokenStreamParserTest::testParse with data set #3 (array(false), false)
+ok 100 - Icecave\Duct\TokenStreamParserTest::testParse with data set #4 (array(NULL), NULL)
+ok 101 - Icecave\Duct\TokenStreamParserTest::testParse with data set #5 (array('foo'), 'foo')
+ok 102 - Icecave\Duct\TokenStreamParserTest::testParse with data set #6 (array('[', ']'), array())
+ok 103 - Icecave\Duct\TokenStreamParserTest::testParse with data set #7 (array('[', 1, ']'), array(1))
+ok 104 - Icecave\Duct\TokenStreamParserTest::testParse with data set #8 (array('[', 1, ',', 2, ',', 3, ']'), array(1, 2, 3))
+ok 105 - Icecave\Duct\TokenStreamParserTest::testParse with data set #9 (array('[', '[', ']', ']'), array(array()))
+ok 106 - Icecave\Duct\TokenStreamParserTest::testParse with data set #10 (array('[', '{', '}', ']'), array(stdClass))
+ok 107 - Icecave\Duct\TokenStreamParserTest::testParse with data set #11 (array('{', '}'), stdClass)
+ok 108 - Icecave\Duct\TokenStreamParserTest::testParse with data set #12 (array('{', 'k1', ':', 1, '}'), stdClass)
+ok 109 - Icecave\Duct\TokenStreamParserTest::testParse with data set #13 (array('{', 'k1', ':', 1, ',', 'k2', ':', 2, ',', 'k3', ':', 3, '}'), stdClass)
+ok 110 - Icecave\Duct\TokenStreamParserTest::testParse with data set #14 (array('{', 'k1', ':', '{', '}', '}'), stdClass)
+ok 111 - Icecave\Duct\TokenStreamParserTest::testParse with data set #15 (array('{', 'k1', ':', '{', 'k2', ':', '{', '}', '}', '}'), stdClass)
+ok 112 - Icecave\Duct\TokenStreamParserTest::testParse with data set #16 (array('{', 'k1', ':', '[', 1, ',', 2, ']', '}'), stdClass)
+1..112

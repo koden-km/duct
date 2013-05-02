@@ -1,0 +1,18 @@
+
+
+Code Coverage Report 
+  2013-05-02 04:11:46
+
+ Summary: 
+  Classes: 100.00% (9/9)
+  Methods: 100.00% (59/59)
+  Lines:   100.00% (385/385)
+
+\Icecave\Duct::Lexer
+  Methods: 100.00% (28/28)   Lines: 100.00% (230/230)
+\Icecave\Duct::Parser
+  Methods: 100.00% ( 6/ 6)   Lines: 100.00% ( 24/ 24)
+\Icecave\Duct::Token
+  Methods: 100.00% ( 5/ 5)   Lines: 100.00% ( 13/ 13)
+\Icecave\Duct::TokenStreamParser
+  Methods: 100.00% (20/20)   Lines: 100.00% (118/118)
