@@ -24,6 +24,10 @@
         <div class="content">
                 <p>class    <strong>Token</strong></p>
 
+            <div class="description">
+            <p>A JSON token produced by the lexer.</p>
+            <p></p>
+        </div>
     
     
     
@@ -35,48 +39,48 @@
                     
                 </td>
                 <td class="last">
-                    <a href="#method___construct">__construct</a>(<a href="../../Icecave/Duct/TokenType.html"><abbr title="Icecave\Duct\TokenType">TokenType</abbr></a> $type, $value)
+                    <a href="#method___construct">__construct</a>(<a href="../../Icecave/Duct/TokenType.html"><abbr title="Icecave\Duct\TokenType">TokenType</abbr></a> $type, mixed $value)
                     <p></p>
                 </td>
                 <td></td>
             </tr>
                     <tr>
                 <td class="type">
-                    static&nbsp;
+                    static&nbsp;<a href="../../Icecave/Duct/Token.html"><abbr title="Icecave\Duct\Token">Token</abbr></a>
                 </td>
                 <td class="last">
-                    <a href="#method_createSpecial">createSpecial</a>($value)
-                    <p></p>
+                    <a href="#method_createSpecial">createSpecial</a>(string $value)
+                    <p>Create a &#039;special&#039; token.</p>
                 </td>
                 <td></td>
             </tr>
                     <tr>
                 <td class="type">
-                    static&nbsp;
+                    static&nbsp;<a href="../../Icecave/Duct/Token.html"><abbr title="Icecave\Duct\Token">Token</abbr></a>
                 </td>
                 <td class="last">
-                    <a href="#method_createLiteral">createLiteral</a>($value)
-                    <p></p>
+                    <a href="#method_createLiteral">createLiteral</a>(mixed $value)
+                    <p>Create a token that represents a literal value.</p>
                 </td>
                 <td></td>
             </tr>
                     <tr>
                 <td class="type">
-                    
+                    <a href="../../Icecave/Duct/TokenType.html"><abbr title="Icecave\Duct\TokenType">TokenType</abbr></a>
                 </td>
                 <td class="last">
                     <a href="#method_type">type</a>()
-                    <p></p>
+                    <p>Fetch the type of the token.</p>
                 </td>
                 <td></td>
             </tr>
                     <tr>
                 <td class="type">
-                    
+                    mixed
                 </td>
                 <td class="last">
                     <a href="#method_value">value</a>()
-                    <p></p>
+                    <p>Fetch the value of the token.</p>
                 </td>
                 <td></td>
             </tr>
@@ -86,9 +90,9 @@
         <h2>Details</h2>
 
                         <h3 id="method___construct">
-        <div class="location">at line 6</div>
+        <div class="location">at line 15</div>
         <code>            public            
-    <strong>__construct</strong>(<a href="../../Icecave/Duct/TokenType.html"><abbr title="Icecave\Duct\TokenType">TokenType</abbr></a> $type, $value)</code>
+    <strong>__construct</strong>(<a href="../../Icecave/Duct/TokenType.html"><abbr title="Icecave\Duct\TokenType">TokenType</abbr></a> $type, mixed $value)</code>
     </h3>
     <div class="details">
         <p></p>
@@ -100,12 +104,12 @@
                     <tr>
                 <td><a href="../../Icecave/Duct/TokenType.html"><abbr title="Icecave\Duct\TokenType">TokenType</abbr></a></td>
                 <td>$type</td>
-                <td></td>
+                <td>The type of this token.</td>
             </tr>
                     <tr>
-                <td></td>
+                <td>mixed</td>
                 <td>$value</td>
-                <td></td>
+                <td>The token&#039;s value.</td>
             </tr>
             </table>
 
@@ -116,80 +120,116 @@
     </div>
 
                 <h3 id="method_createSpecial">
-        <div class="location">at line 12</div>
-        <code>        static    public            
-    <strong>createSpecial</strong>($value)</code>
+        <div class="location">at line 32</div>
+        <code>        static    public            <a href="../../Icecave/Duct/Token.html"><abbr title="Icecave\Duct\Token">Token</abbr></a>
+    <strong>createSpecial</strong>(string $value)</code>
     </h3>
     <div class="details">
-        <p></p>
-        <p></p>
+        <p>Create a &#039;special&#039; token.</p>
+        <p>Special tokens are the meaningful JSON characters outside of primitive values, such as braces, brackets, etc.</p>
         <div class="tags">
                             <h4>Parameters</h4>
 
                     <table>
                     <tr>
-                <td></td>
+                <td>string</td>
                 <td>$value</td>
-                <td></td>
+                <td>The character of the special token.</td>
             </tr>
             </table>
 
             
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="../../Icecave/Duct/Token.html"><abbr title="Icecave\Duct\Token">Token</abbr></a></td>
+            <td>The resulting token.</td>
+        </tr>
+    </table>
+
             
             
                     </div>
     </div>
 
                 <h3 id="method_createLiteral">
-        <div class="location">at line 17</div>
-        <code>        static    public            
-    <strong>createLiteral</strong>($value)</code>
+        <div class="location">at line 48</div>
+        <code>        static    public            <a href="../../Icecave/Duct/Token.html"><abbr title="Icecave\Duct\Token">Token</abbr></a>
+    <strong>createLiteral</strong>(mixed $value)</code>
     </h3>
     <div class="details">
-        <p></p>
-        <p></p>
+        <p>Create a token that represents a literal value.</p>
+        <p>Literal values are the primitive values that may be expressed directly in the JSON grammar, such as strings, boolean, numbers, etc.</p>
         <div class="tags">
                             <h4>Parameters</h4>
 
                     <table>
                     <tr>
-                <td></td>
+                <td>mixed</td>
                 <td>$value</td>
-                <td></td>
+                <td>The literal value.</td>
             </tr>
             </table>
 
             
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="../../Icecave/Duct/Token.html"><abbr title="Icecave\Duct\Token">Token</abbr></a></td>
+            <td>The resulting token.</td>
+        </tr>
+    </table>
+
             
             
                     </div>
     </div>
 
                 <h3 id="method_type">
-        <div class="location">at line 30</div>
-        <code>            public            
+        <div class="location">at line 68</div>
+        <code>            public            <a href="../../Icecave/Duct/TokenType.html"><abbr title="Icecave\Duct\TokenType">TokenType</abbr></a>
     <strong>type</strong>()</code>
     </h3>
     <div class="details">
-        <p></p>
+        <p>Fetch the type of the token.</p>
         <p></p>
         <div class="tags">
             
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td><a href="../../Icecave/Duct/TokenType.html"><abbr title="Icecave\Duct\TokenType">TokenType</abbr></a></td>
+            <td>The type of the token.</td>
+        </tr>
+    </table>
+
             
             
                     </div>
     </div>
 
                 <h3 id="method_value">
-        <div class="location">at line 35</div>
-        <code>            public            
+        <div class="location">at line 80</div>
+        <code>            public            mixed
     <strong>value</strong>()</code>
     </h3>
     <div class="details">
-        <p></p>
+        <p>Fetch the value of the token.</p>
         <p></p>
         <div class="tags">
             
+                            <h4>Return Value</h4>
+
+                    <table>
+        <tr>
+            <td>mixed</td>
+            <td>The value of the token.</td>
+        </tr>
+    </table>
+
             
             
                     </div>
