@@ -1,132 +1,132 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="" tests="112" assertions="358" failures="0" errors="0" time="1.362073">
-    <testsuite name="Icecave\Duct\LexerTest" file="/home/travis/build/IcecaveStudios/duct/test/suite/Icecave/Duct/LexerTest.php" namespace="Icecave\Duct" fullPackage="Icecave.Duct" tests="79" assertions="258" failures="0" errors="0" time="0.786209">
-      <testcase name="testFeedEmitsIntegerAfterNonDigit" class="Icecave\Duct\LexerTest" file="/home/travis/build/IcecaveStudios/duct/test/suite/Icecave/Duct/LexerTest.php" line="17" assertions="2" time="0.023345"/>
-      <testcase name="testFeedEmitsMultipleIntegers" class="Icecave\Duct\LexerTest" file="/home/travis/build/IcecaveStudios/duct/test/suite/Icecave/Duct/LexerTest.php" line="26" assertions="2" time="0.009531"/>
-      <testcase name="testFeedIntegerThenNonInteger" class="Icecave\Duct\LexerTest" file="/home/travis/build/IcecaveStudios/duct/test/suite/Icecave/Duct/LexerTest.php" line="35" assertions="2" time="0.008903"/>
-      <testcase name="testFeedZeroIntegerThenNonInteger" class="Icecave\Duct\LexerTest" file="/home/travis/build/IcecaveStudios/duct/test/suite/Icecave/Duct/LexerTest.php" line="44" assertions="2" time="0.009012"/>
-      <testcase name="testFeedFloatThenNonInteger" class="Icecave\Duct\LexerTest" file="/home/travis/build/IcecaveStudios/duct/test/suite/Icecave/Duct/LexerTest.php" line="53" assertions="2" time="0.010026"/>
-      <testcase name="testFeedExponentThenNonInteger" class="Icecave\Duct\LexerTest" file="/home/travis/build/IcecaveStudios/duct/test/suite/Icecave/Duct/LexerTest.php" line="62" assertions="2" time="0.010490"/>
-      <testcase name="testFeedFailsOnInvalidBeginningCharacter" class="Icecave\Duct\LexerTest" file="/home/travis/build/IcecaveStudios/duct/test/suite/Icecave/Duct/LexerTest.php" line="71" assertions="2" time="0.006678"/>
-      <testcase name="testFeedFailsOnInvalidEscapeSequence" class="Icecave\Duct\LexerTest" file="/home/travis/build/IcecaveStudios/duct/test/suite/Icecave/Duct/LexerTest.php" line="77" assertions="2" time="0.005077"/>
-      <testcase name="testFeedFailsOnInvalidUnicodeEscapeSequence" class="Icecave\Duct\LexerTest" file="/home/travis/build/IcecaveStudios/duct/test/suite/Icecave/Duct/LexerTest.php" line="83" assertions="2" time="0.005624"/>
-      <testcase name="testFeedFailsOnNonDigitAfterNegativeSign" class="Icecave\Duct\LexerTest" file="/home/travis/build/IcecaveStudios/duct/test/suite/Icecave/Duct/LexerTest.php" line="89" assertions="2" time="0.005428"/>
-      <testcase name="testFeedFailsOnNonDigitAfterDecimalPoint" class="Icecave\Duct\LexerTest" file="/home/travis/build/IcecaveStudios/duct/test/suite/Icecave/Duct/LexerTest.php" line="95" assertions="2" time="0.005925"/>
-      <testcase name="testFeedFailsOnNonDigitAfterExponentE" class="Icecave\Duct\LexerTest" file="/home/travis/build/IcecaveStudios/duct/test/suite/Icecave/Duct/LexerTest.php" line="101" assertions="2" time="0.005743"/>
-      <testcase name="testFeedFailsOnMispelledTrue" class="Icecave\Duct\LexerTest" file="/home/travis/build/IcecaveStudios/duct/test/suite/Icecave/Duct/LexerTest.php" line="107" assertions="2" time="0.006606"/>
-      <testcase name="testFeedFailsOnMispelledFalse" class="Icecave\Duct\LexerTest" file="/home/travis/build/IcecaveStudios/duct/test/suite/Icecave/Duct/LexerTest.php" line="113" assertions="2" time="0.006733"/>
-      <testcase name="testFeedFailsOnMispelledNull" class="Icecave\Duct\LexerTest" file="/home/travis/build/IcecaveStudios/duct/test/suite/Icecave/Duct/LexerTest.php" line="119" assertions="2" time="0.006911"/>
-      <testcase name="testFeedFailsOnMultipleHighSurrogates" class="Icecave\Duct\LexerTest" file="/home/travis/build/IcecaveStudios/duct/test/suite/Icecave/Duct/LexerTest.php" line="125" assertions="2" time="0.008434"/>
-      <testcase name="testFeedFailsOnMissingHighSurrogate" class="Icecave\Duct\LexerTest" file="/home/travis/build/IcecaveStudios/duct/test/suite/Icecave/Duct/LexerTest.php" line="131" assertions="2" time="0.006575"/>
-      <testcase name="testFeedFailsOnMissingLowSurrogateEndString" class="Icecave\Duct\LexerTest" file="/home/travis/build/IcecaveStudios/duct/test/suite/Icecave/Duct/LexerTest.php" line="137" assertions="2" time="0.006802"/>
-      <testcase name="testFeedFailsOnMissingLowSurrogateRegularCharacter" class="Icecave\Duct\LexerTest" file="/home/travis/build/IcecaveStudios/duct/test/suite/Icecave/Duct/LexerTest.php" line="143" assertions="2" time="0.006634"/>
-      <testcase name="testFeedFailsOnMissingLowSurrogateRegularNonUnicodeEscape" class="Icecave\Duct\LexerTest" file="/home/travis/build/IcecaveStudios/duct/test/suite/Icecave/Duct/LexerTest.php" line="149" assertions="2" time="0.007032"/>
-      <testcase name="testFeedPartialMultibyteCharacter" class="Icecave\Duct\LexerTest" file="/home/travis/build/IcecaveStudios/duct/test/suite/Icecave/Duct/LexerTest.php" line="155" assertions="2" time="0.006634"/>
-      <testsuite name="Icecave\Duct\LexerTest::testFinalizeFailsWithPartialLiteral" tests="8" assertions="16" failures="0" errors="0" time="0.051155">
-        <testcase name="testFinalizeFailsWithPartialLiteral with data set #0" assertions="2" time="0.005120"/>
-        <testcase name="testFinalizeFailsWithPartialLiteral with data set #1" assertions="2" time="0.005568"/>
-        <testcase name="testFinalizeFailsWithPartialLiteral with data set #2" assertions="2" time="0.005506"/>
-        <testcase name="testFinalizeFailsWithPartialLiteral with data set #3" assertions="2" time="0.005703"/>
-        <testcase name="testFinalizeFailsWithPartialLiteral with data set #4" assertions="2" time="0.006453"/>
-        <testcase name="testFinalizeFailsWithPartialLiteral with data set #5" assertions="2" time="0.007087"/>
-        <testcase name="testFinalizeFailsWithPartialLiteral with data set #6" assertions="2" time="0.008202"/>
-        <testcase name="testFinalizeFailsWithPartialLiteral with data set #7" assertions="2" time="0.007516"/>
+  <testsuite name="" tests="112" assertions="358" failures="0" errors="0" time="1.850528">
+    <testsuite name="Icecave\Duct\LexerTest" file="/home/travis/build/IcecaveStudios/duct/test/suite/Icecave/Duct/LexerTest.php" namespace="Icecave\Duct" fullPackage="Icecave.Duct" tests="79" assertions="258" failures="0" errors="0" time="1.038409">
+      <testcase name="testFeedEmitsIntegerAfterNonDigit" class="Icecave\Duct\LexerTest" file="/home/travis/build/IcecaveStudios/duct/test/suite/Icecave/Duct/LexerTest.php" line="17" assertions="2" time="0.028335"/>
+      <testcase name="testFeedEmitsMultipleIntegers" class="Icecave\Duct\LexerTest" file="/home/travis/build/IcecaveStudios/duct/test/suite/Icecave/Duct/LexerTest.php" line="26" assertions="2" time="0.012104"/>
+      <testcase name="testFeedIntegerThenNonInteger" class="Icecave\Duct\LexerTest" file="/home/travis/build/IcecaveStudios/duct/test/suite/Icecave/Duct/LexerTest.php" line="35" assertions="2" time="0.011256"/>
+      <testcase name="testFeedZeroIntegerThenNonInteger" class="Icecave\Duct\LexerTest" file="/home/travis/build/IcecaveStudios/duct/test/suite/Icecave/Duct/LexerTest.php" line="44" assertions="2" time="0.011435"/>
+      <testcase name="testFeedFloatThenNonInteger" class="Icecave\Duct\LexerTest" file="/home/travis/build/IcecaveStudios/duct/test/suite/Icecave/Duct/LexerTest.php" line="53" assertions="2" time="0.013123"/>
+      <testcase name="testFeedExponentThenNonInteger" class="Icecave\Duct\LexerTest" file="/home/travis/build/IcecaveStudios/duct/test/suite/Icecave/Duct/LexerTest.php" line="62" assertions="2" time="0.013630"/>
+      <testcase name="testFeedFailsOnInvalidBeginningCharacter" class="Icecave\Duct\LexerTest" file="/home/travis/build/IcecaveStudios/duct/test/suite/Icecave/Duct/LexerTest.php" line="71" assertions="2" time="0.008334"/>
+      <testcase name="testFeedFailsOnInvalidEscapeSequence" class="Icecave\Duct\LexerTest" file="/home/travis/build/IcecaveStudios/duct/test/suite/Icecave/Duct/LexerTest.php" line="77" assertions="2" time="0.006477"/>
+      <testcase name="testFeedFailsOnInvalidUnicodeEscapeSequence" class="Icecave\Duct\LexerTest" file="/home/travis/build/IcecaveStudios/duct/test/suite/Icecave/Duct/LexerTest.php" line="83" assertions="2" time="0.007000"/>
+      <testcase name="testFeedFailsOnNonDigitAfterNegativeSign" class="Icecave\Duct\LexerTest" file="/home/travis/build/IcecaveStudios/duct/test/suite/Icecave/Duct/LexerTest.php" line="89" assertions="2" time="0.006446"/>
+      <testcase name="testFeedFailsOnNonDigitAfterDecimalPoint" class="Icecave\Duct\LexerTest" file="/home/travis/build/IcecaveStudios/duct/test/suite/Icecave/Duct/LexerTest.php" line="95" assertions="2" time="0.007418"/>
+      <testcase name="testFeedFailsOnNonDigitAfterExponentE" class="Icecave\Duct\LexerTest" file="/home/travis/build/IcecaveStudios/duct/test/suite/Icecave/Duct/LexerTest.php" line="101" assertions="2" time="0.007508"/>
+      <testcase name="testFeedFailsOnMispelledTrue" class="Icecave\Duct\LexerTest" file="/home/travis/build/IcecaveStudios/duct/test/suite/Icecave/Duct/LexerTest.php" line="107" assertions="2" time="0.008479"/>
+      <testcase name="testFeedFailsOnMispelledFalse" class="Icecave\Duct\LexerTest" file="/home/travis/build/IcecaveStudios/duct/test/suite/Icecave/Duct/LexerTest.php" line="113" assertions="2" time="0.008673"/>
+      <testcase name="testFeedFailsOnMispelledNull" class="Icecave\Duct\LexerTest" file="/home/travis/build/IcecaveStudios/duct/test/suite/Icecave/Duct/LexerTest.php" line="119" assertions="2" time="0.008883"/>
+      <testcase name="testFeedFailsOnMultipleHighSurrogates" class="Icecave\Duct\LexerTest" file="/home/travis/build/IcecaveStudios/duct/test/suite/Icecave/Duct/LexerTest.php" line="125" assertions="2" time="0.010730"/>
+      <testcase name="testFeedFailsOnMissingHighSurrogate" class="Icecave\Duct\LexerTest" file="/home/travis/build/IcecaveStudios/duct/test/suite/Icecave/Duct/LexerTest.php" line="131" assertions="2" time="0.008343"/>
+      <testcase name="testFeedFailsOnMissingLowSurrogateEndString" class="Icecave\Duct\LexerTest" file="/home/travis/build/IcecaveStudios/duct/test/suite/Icecave/Duct/LexerTest.php" line="137" assertions="2" time="0.008615"/>
+      <testcase name="testFeedFailsOnMissingLowSurrogateRegularCharacter" class="Icecave\Duct\LexerTest" file="/home/travis/build/IcecaveStudios/duct/test/suite/Icecave/Duct/LexerTest.php" line="143" assertions="2" time="0.008629"/>
+      <testcase name="testFeedFailsOnMissingLowSurrogateRegularNonUnicodeEscape" class="Icecave\Duct\LexerTest" file="/home/travis/build/IcecaveStudios/duct/test/suite/Icecave/Duct/LexerTest.php" line="149" assertions="2" time="0.009029"/>
+      <testcase name="testFeedPartialMultibyteCharacter" class="Icecave\Duct\LexerTest" file="/home/travis/build/IcecaveStudios/duct/test/suite/Icecave/Duct/LexerTest.php" line="155" assertions="2" time="0.008238"/>
+      <testsuite name="Icecave\Duct\LexerTest::testFinalizeFailsWithPartialLiteral" tests="8" assertions="16" failures="0" errors="0" time="0.065020">
+        <testcase name="testFinalizeFailsWithPartialLiteral with data set #0" assertions="2" time="0.006093"/>
+        <testcase name="testFinalizeFailsWithPartialLiteral with data set #1" assertions="2" time="0.006808"/>
+        <testcase name="testFinalizeFailsWithPartialLiteral with data set #2" assertions="2" time="0.006807"/>
+        <testcase name="testFinalizeFailsWithPartialLiteral with data set #3" assertions="2" time="0.007252"/>
+        <testcase name="testFinalizeFailsWithPartialLiteral with data set #4" assertions="2" time="0.008201"/>
+        <testcase name="testFinalizeFailsWithPartialLiteral with data set #5" assertions="2" time="0.009002"/>
+        <testcase name="testFinalizeFailsWithPartialLiteral with data set #6" assertions="2" time="0.010917"/>
+        <testcase name="testFinalizeFailsWithPartialLiteral with data set #7" assertions="2" time="0.009940"/>
       </testsuite>
-      <testsuite name="Icecave\Duct\LexerTest::testLexWithSingleToken" tests="50" assertions="200" failures="0" errors="0" time="0.566911">
-        <testcase name="testLexWithSingleToken with data set #0" assertions="4" time="0.019223"/>
-        <testcase name="testLexWithSingleToken with data set #1" assertions="4" time="0.009548"/>
-        <testcase name="testLexWithSingleToken with data set #2" assertions="4" time="0.009506"/>
-        <testcase name="testLexWithSingleToken with data set #3" assertions="4" time="0.009948"/>
-        <testcase name="testLexWithSingleToken with data set #4" assertions="4" time="0.009718"/>
-        <testcase name="testLexWithSingleToken with data set #5" assertions="4" time="0.009730"/>
-        <testcase name="testLexWithSingleToken with data set #6" assertions="4" time="0.012527"/>
-        <testcase name="testLexWithSingleToken with data set #7" assertions="4" time="0.013703"/>
-        <testcase name="testLexWithSingleToken with data set #8" assertions="4" time="0.012770"/>
-        <testcase name="testLexWithSingleToken with data set #9" assertions="4" time="0.009289"/>
-        <testcase name="testLexWithSingleToken with data set #10" assertions="4" time="0.009922"/>
-        <testcase name="testLexWithSingleToken with data set #11" assertions="4" time="0.009326"/>
-        <testcase name="testLexWithSingleToken with data set #12" assertions="4" time="0.009629"/>
-        <testcase name="testLexWithSingleToken with data set #13" assertions="4" time="0.010786"/>
-        <testcase name="testLexWithSingleToken with data set #14" assertions="4" time="0.011290"/>
-        <testcase name="testLexWithSingleToken with data set #15" assertions="4" time="0.010720"/>
-        <testcase name="testLexWithSingleToken with data set #16" assertions="4" time="0.011095"/>
-        <testcase name="testLexWithSingleToken with data set #17" assertions="4" time="0.010548"/>
-        <testcase name="testLexWithSingleToken with data set #18" assertions="4" time="0.011040"/>
-        <testcase name="testLexWithSingleToken with data set #19" assertions="4" time="0.012386"/>
-        <testcase name="testLexWithSingleToken with data set #20" assertions="4" time="0.012895"/>
-        <testcase name="testLexWithSingleToken with data set #21" assertions="4" time="0.010926"/>
-        <testcase name="testLexWithSingleToken with data set #22" assertions="4" time="0.011451"/>
-        <testcase name="testLexWithSingleToken with data set #23" assertions="4" time="0.011139"/>
-        <testcase name="testLexWithSingleToken with data set #24" assertions="4" time="0.010852"/>
-        <testcase name="testLexWithSingleToken with data set #25" assertions="4" time="0.011816"/>
-        <testcase name="testLexWithSingleToken with data set #26" assertions="4" time="0.011912"/>
-        <testcase name="testLexWithSingleToken with data set #27" assertions="4" time="0.011646"/>
-        <testcase name="testLexWithSingleToken with data set #28" assertions="4" time="0.011565"/>
-        <testcase name="testLexWithSingleToken with data set #29" assertions="4" time="0.012246"/>
-        <testcase name="testLexWithSingleToken with data set #30" assertions="4" time="0.012265"/>
-        <testcase name="testLexWithSingleToken with data set #31" assertions="4" time="0.012489"/>
-        <testcase name="testLexWithSingleToken with data set #32" assertions="4" time="0.011580"/>
-        <testcase name="testLexWithSingleToken with data set #33" assertions="4" time="0.012465"/>
-        <testcase name="testLexWithSingleToken with data set #34" assertions="4" time="0.012443"/>
-        <testcase name="testLexWithSingleToken with data set #35" assertions="4" time="0.013164"/>
-        <testcase name="testLexWithSingleToken with data set #36" assertions="4" time="0.013171"/>
-        <testcase name="testLexWithSingleToken with data set #37" assertions="4" time="0.009743"/>
-        <testcase name="testLexWithSingleToken with data set #38" assertions="4" time="0.009967"/>
-        <testcase name="testLexWithSingleToken with data set #39" assertions="4" time="0.010711"/>
-        <testcase name="testLexWithSingleToken with data set #40" assertions="4" time="0.010305"/>
-        <testcase name="testLexWithSingleToken with data set #41" assertions="4" time="0.010030"/>
-        <testcase name="testLexWithSingleToken with data set #42" assertions="4" time="0.011818"/>
-        <testcase name="testLexWithSingleToken with data set #43" assertions="4" time="0.011350"/>
-        <testcase name="testLexWithSingleToken with data set #44" assertions="4" time="0.010356"/>
-        <testcase name="testLexWithSingleToken with data set #45" assertions="4" time="0.010245"/>
-        <testcase name="testLexWithSingleToken with data set #46" assertions="4" time="0.010065"/>
-        <testcase name="testLexWithSingleToken with data set #47" assertions="4" time="0.010338"/>
-        <testcase name="testLexWithSingleToken with data set #48" assertions="4" time="0.011632"/>
-        <testcase name="testLexWithSingleToken with data set #49" assertions="4" time="0.013622"/>
-      </testsuite>
-    </testsuite>
-    <testsuite name="Icecave\Duct\ParserTest" file="/home/travis/build/IcecaveStudios/duct/test/suite/Icecave/Duct/ParserTest.php" namespace="Icecave\Duct" fullPackage="Icecave.Duct" tests="6" assertions="12" failures="0" errors="0" time="0.313584">
-      <testsuite name="Icecave\Duct\ParserTest::testParse" tests="6" assertions="12" failures="0" errors="0" time="0.313584">
-        <testcase name="testParse with data set #0" assertions="2" time="0.019538"/>
-        <testcase name="testParse with data set #1" assertions="2" time="0.014171"/>
-        <testcase name="testParse with data set #2" assertions="2" time="0.064226"/>
-        <testcase name="testParse with data set #3" assertions="2" time="0.118028"/>
-        <testcase name="testParse with data set #4" assertions="2" time="0.036511"/>
-        <testcase name="testParse with data set #5" assertions="2" time="0.061110"/>
+      <testsuite name="Icecave\Duct\LexerTest::testLexWithSingleToken" tests="50" assertions="200" failures="0" errors="0" time="0.760703">
+        <testcase name="testLexWithSingleToken with data set #0" assertions="4" time="0.023577"/>
+        <testcase name="testLexWithSingleToken with data set #1" assertions="4" time="0.011922"/>
+        <testcase name="testLexWithSingleToken with data set #2" assertions="4" time="0.011908"/>
+        <testcase name="testLexWithSingleToken with data set #3" assertions="4" time="0.011993"/>
+        <testcase name="testLexWithSingleToken with data set #4" assertions="4" time="0.012029"/>
+        <testcase name="testLexWithSingleToken with data set #5" assertions="4" time="0.012058"/>
+        <testcase name="testLexWithSingleToken with data set #6" assertions="4" time="0.016483"/>
+        <testcase name="testLexWithSingleToken with data set #7" assertions="4" time="0.018023"/>
+        <testcase name="testLexWithSingleToken with data set #8" assertions="4" time="0.016494"/>
+        <testcase name="testLexWithSingleToken with data set #9" assertions="4" time="0.011598"/>
+        <testcase name="testLexWithSingleToken with data set #10" assertions="4" time="0.012425"/>
+        <testcase name="testLexWithSingleToken with data set #11" assertions="4" time="0.011466"/>
+        <testcase name="testLexWithSingleToken with data set #12" assertions="4" time="0.012245"/>
+        <testcase name="testLexWithSingleToken with data set #13" assertions="4" time="0.013614"/>
+        <testcase name="testLexWithSingleToken with data set #14" assertions="4" time="0.014504"/>
+        <testcase name="testLexWithSingleToken with data set #15" assertions="4" time="0.013622"/>
+        <testcase name="testLexWithSingleToken with data set #16" assertions="4" time="0.015236"/>
+        <testcase name="testLexWithSingleToken with data set #17" assertions="4" time="0.014583"/>
+        <testcase name="testLexWithSingleToken with data set #18" assertions="4" time="0.015397"/>
+        <testcase name="testLexWithSingleToken with data set #19" assertions="4" time="0.017684"/>
+        <testcase name="testLexWithSingleToken with data set #20" assertions="4" time="0.018569"/>
+        <testcase name="testLexWithSingleToken with data set #21" assertions="4" time="0.015324"/>
+        <testcase name="testLexWithSingleToken with data set #22" assertions="4" time="0.015207"/>
+        <testcase name="testLexWithSingleToken with data set #23" assertions="4" time="0.014921"/>
+        <testcase name="testLexWithSingleToken with data set #24" assertions="4" time="0.014883"/>
+        <testcase name="testLexWithSingleToken with data set #25" assertions="4" time="0.016107"/>
+        <testcase name="testLexWithSingleToken with data set #26" assertions="4" time="0.016274"/>
+        <testcase name="testLexWithSingleToken with data set #27" assertions="4" time="0.016222"/>
+        <testcase name="testLexWithSingleToken with data set #28" assertions="4" time="0.016223"/>
+        <testcase name="testLexWithSingleToken with data set #29" assertions="4" time="0.017734"/>
+        <testcase name="testLexWithSingleToken with data set #30" assertions="4" time="0.017477"/>
+        <testcase name="testLexWithSingleToken with data set #31" assertions="4" time="0.016050"/>
+        <testcase name="testLexWithSingleToken with data set #32" assertions="4" time="0.016114"/>
+        <testcase name="testLexWithSingleToken with data set #33" assertions="4" time="0.017462"/>
+        <testcase name="testLexWithSingleToken with data set #34" assertions="4" time="0.017380"/>
+        <testcase name="testLexWithSingleToken with data set #35" assertions="4" time="0.019206"/>
+        <testcase name="testLexWithSingleToken with data set #36" assertions="4" time="0.018949"/>
+        <testcase name="testLexWithSingleToken with data set #37" assertions="4" time="0.013270"/>
+        <testcase name="testLexWithSingleToken with data set #38" assertions="4" time="0.013822"/>
+        <testcase name="testLexWithSingleToken with data set #39" assertions="4" time="0.014584"/>
+        <testcase name="testLexWithSingleToken with data set #40" assertions="4" time="0.014149"/>
+        <testcase name="testLexWithSingleToken with data set #41" assertions="4" time="0.014136"/>
+        <testcase name="testLexWithSingleToken with data set #42" assertions="4" time="0.013917"/>
+        <testcase name="testLexWithSingleToken with data set #43" assertions="4" time="0.014094"/>
+        <testcase name="testLexWithSingleToken with data set #44" assertions="4" time="0.014218"/>
+        <testcase name="testLexWithSingleToken with data set #45" assertions="4" time="0.014110"/>
+        <testcase name="testLexWithSingleToken with data set #46" assertions="4" time="0.014019"/>
+        <testcase name="testLexWithSingleToken with data set #47" assertions="4" time="0.014234"/>
+        <testcase name="testLexWithSingleToken with data set #48" assertions="4" time="0.016171"/>
+        <testcase name="testLexWithSingleToken with data set #49" assertions="4" time="0.019016"/>
       </testsuite>
     </testsuite>
-    <testsuite name="Icecave\Duct\TokenStreamParserTest" file="/home/travis/build/IcecaveStudios/duct/test/suite/Icecave/Duct/TokenStreamParserTest.php" namespace="Icecave\Duct" fullPackage="Icecave.Duct" tests="27" assertions="88" failures="0" errors="0" time="0.262281">
-      <testcase name="testFinalizeFailsWithPartialObject" class="Icecave\Duct\TokenStreamParserTest" file="/home/travis/build/IcecaveStudios/duct/test/suite/Icecave/Duct/TokenStreamParserTest.php" line="29" assertions="2" time="0.005148"/>
-      <testcase name="testFinalizeFailsWithPartialArray" class="Icecave\Duct\TokenStreamParserTest" file="/home/travis/build/IcecaveStudios/duct/test/suite/Icecave/Duct/TokenStreamParserTest.php" line="38" assertions="2" time="0.004885"/>
-      <testcase name="testFeedFailsOnNonStringKey" class="Icecave\Duct\TokenStreamParserTest" file="/home/travis/build/IcecaveStudios/duct/test/suite/Icecave/Duct/TokenStreamParserTest.php" line="47" assertions="2" time="0.006243"/>
-      <testcase name="testFeedFailsUnexpectedTokenAfterObjectKey" class="Icecave\Duct\TokenStreamParserTest" file="/home/travis/build/IcecaveStudios/duct/test/suite/Icecave/Duct/TokenStreamParserTest.php" line="55" assertions="2" time="0.007737"/>
-      <testcase name="testFeedFailsUnexpectedTokenAfterObjectValue" class="Icecave\Duct\TokenStreamParserTest" file="/home/travis/build/IcecaveStudios/duct/test/suite/Icecave/Duct/TokenStreamParserTest.php" line="63" assertions="2" time="0.010933"/>
-      <testcase name="testFeedFailsUnexpectedTokenAfterArrayValue" class="Icecave\Duct\TokenStreamParserTest" file="/home/travis/build/IcecaveStudios/duct/test/suite/Icecave/Duct/TokenStreamParserTest.php" line="71" assertions="2" time="0.007703"/>
-      <testsuite name="Icecave\Duct\TokenStreamParserTest::testFeedFailsOnInvalidStartingToken" tests="4" assertions="8" failures="0" errors="0" time="0.022335">
-        <testcase name="testFeedFailsOnInvalidStartingToken with data set #0" assertions="2" time="0.005356"/>
-        <testcase name="testFeedFailsOnInvalidStartingToken with data set #1" assertions="2" time="0.005598"/>
-        <testcase name="testFeedFailsOnInvalidStartingToken with data set #2" assertions="2" time="0.005650"/>
-        <testcase name="testFeedFailsOnInvalidStartingToken with data set #3" assertions="2" time="0.005731"/>
+    <testsuite name="Icecave\Duct\ParserTest" file="/home/travis/build/IcecaveStudios/duct/test/suite/Icecave/Duct/ParserTest.php" namespace="Icecave\Duct" fullPackage="Icecave.Duct" tests="6" assertions="12" failures="0" errors="0" time="0.463068">
+      <testsuite name="Icecave\Duct\ParserTest::testParse" tests="6" assertions="12" failures="0" errors="0" time="0.463068">
+        <testcase name="testParse with data set #0" assertions="2" time="0.027932"/>
+        <testcase name="testParse with data set #1" assertions="2" time="0.019728"/>
+        <testcase name="testParse with data set #2" assertions="2" time="0.096039"/>
+        <testcase name="testParse with data set #3" assertions="2" time="0.177491"/>
+        <testcase name="testParse with data set #4" assertions="2" time="0.052330"/>
+        <testcase name="testParse with data set #5" assertions="2" time="0.089548"/>
       </testsuite>
-      <testsuite name="Icecave\Duct\TokenStreamParserTest::testParse" tests="17" assertions="68" failures="0" errors="0" time="0.197297">
-        <testcase name="testParse with data set #0" assertions="4" time="0.006817"/>
-        <testcase name="testParse with data set #1" assertions="4" time="0.006738"/>
-        <testcase name="testParse with data set #2" assertions="4" time="0.006560"/>
-        <testcase name="testParse with data set #3" assertions="4" time="0.006464"/>
-        <testcase name="testParse with data set #4" assertions="4" time="0.006751"/>
-        <testcase name="testParse with data set #5" assertions="4" time="0.006583"/>
-        <testcase name="testParse with data set #6" assertions="4" time="0.007406"/>
-        <testcase name="testParse with data set #7" assertions="4" time="0.009880"/>
-        <testcase name="testParse with data set #8" assertions="4" time="0.017355"/>
-        <testcase name="testParse with data set #9" assertions="4" time="0.010548"/>
-        <testcase name="testParse with data set #10" assertions="4" time="0.010648"/>
-        <testcase name="testParse with data set #11" assertions="4" time="0.007490"/>
-        <testcase name="testParse with data set #12" assertions="4" time="0.013315"/>
-        <testcase name="testParse with data set #13" assertions="4" time="0.026465"/>
-        <testcase name="testParse with data set #14" assertions="4" time="0.013940"/>
-        <testcase name="testParse with data set #15" assertions="4" time="0.020331"/>
-        <testcase name="testParse with data set #16" assertions="4" time="0.020006"/>
+    </testsuite>
+    <testsuite name="Icecave\Duct\TokenStreamParserTest" file="/home/travis/build/IcecaveStudios/duct/test/suite/Icecave/Duct/TokenStreamParserTest.php" namespace="Icecave\Duct" fullPackage="Icecave.Duct" tests="27" assertions="88" failures="0" errors="0" time="0.349050">
+      <testcase name="testFinalizeFailsWithPartialObject" class="Icecave\Duct\TokenStreamParserTest" file="/home/travis/build/IcecaveStudios/duct/test/suite/Icecave/Duct/TokenStreamParserTest.php" line="29" assertions="2" time="0.006388"/>
+      <testcase name="testFinalizeFailsWithPartialArray" class="Icecave\Duct\TokenStreamParserTest" file="/home/travis/build/IcecaveStudios/duct/test/suite/Icecave/Duct/TokenStreamParserTest.php" line="38" assertions="2" time="0.006263"/>
+      <testcase name="testFeedFailsOnNonStringKey" class="Icecave\Duct\TokenStreamParserTest" file="/home/travis/build/IcecaveStudios/duct/test/suite/Icecave/Duct/TokenStreamParserTest.php" line="47" assertions="2" time="0.008085"/>
+      <testcase name="testFeedFailsUnexpectedTokenAfterObjectKey" class="Icecave\Duct\TokenStreamParserTest" file="/home/travis/build/IcecaveStudios/duct/test/suite/Icecave/Duct/TokenStreamParserTest.php" line="55" assertions="2" time="0.010417"/>
+      <testcase name="testFeedFailsUnexpectedTokenAfterObjectValue" class="Icecave\Duct\TokenStreamParserTest" file="/home/travis/build/IcecaveStudios/duct/test/suite/Icecave/Duct/TokenStreamParserTest.php" line="63" assertions="2" time="0.015071"/>
+      <testcase name="testFeedFailsUnexpectedTokenAfterArrayValue" class="Icecave\Duct\TokenStreamParserTest" file="/home/travis/build/IcecaveStudios/duct/test/suite/Icecave/Duct/TokenStreamParserTest.php" line="71" assertions="2" time="0.010276"/>
+      <testsuite name="Icecave\Duct\TokenStreamParserTest::testFeedFailsOnInvalidStartingToken" tests="4" assertions="8" failures="0" errors="0" time="0.028449">
+        <testcase name="testFeedFailsOnInvalidStartingToken with data set #0" assertions="2" time="0.006843"/>
+        <testcase name="testFeedFailsOnInvalidStartingToken with data set #1" assertions="2" time="0.007031"/>
+        <testcase name="testFeedFailsOnInvalidStartingToken with data set #2" assertions="2" time="0.007218"/>
+        <testcase name="testFeedFailsOnInvalidStartingToken with data set #3" assertions="2" time="0.007357"/>
+      </testsuite>
+      <testsuite name="Icecave\Duct\TokenStreamParserTest::testParse" tests="17" assertions="68" failures="0" errors="0" time="0.264101">
+        <testcase name="testParse with data set #0" assertions="4" time="0.008576"/>
+        <testcase name="testParse with data set #1" assertions="4" time="0.008843"/>
+        <testcase name="testParse with data set #2" assertions="4" time="0.008327"/>
+        <testcase name="testParse with data set #3" assertions="4" time="0.008439"/>
+        <testcase name="testParse with data set #4" assertions="4" time="0.008452"/>
+        <testcase name="testParse with data set #5" assertions="4" time="0.008163"/>
+        <testcase name="testParse with data set #6" assertions="4" time="0.009465"/>
+        <testcase name="testParse with data set #7" assertions="4" time="0.013151"/>
+        <testcase name="testParse with data set #8" assertions="4" time="0.023679"/>
+        <testcase name="testParse with data set #9" assertions="4" time="0.013940"/>
+        <testcase name="testParse with data set #10" assertions="4" time="0.014057"/>
+        <testcase name="testParse with data set #11" assertions="4" time="0.009648"/>
+        <testcase name="testParse with data set #12" assertions="4" time="0.018119"/>
+        <testcase name="testParse with data set #13" assertions="4" time="0.038247"/>
+        <testcase name="testParse with data set #14" assertions="4" time="0.018940"/>
+        <testcase name="testParse with data set #15" assertions="4" time="0.028347"/>
+        <testcase name="testParse with data set #16" assertions="4" time="0.025708"/>
       </testsuite>
     </testsuite>
   </testsuite>
