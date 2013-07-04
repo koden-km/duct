@@ -9,7 +9,7 @@ var tree = [["Icecave",,"",
                 [        ]],["Parser","Icecave\/Duct\/Parser.html","",
                 [        ]],["ParserState","Icecave\/Duct\/ParserState.html"," < Enumeration",
                 [        ]],["Token","Icecave\/Duct\/Token.html","",
-                [        ]],["TokenStreamParser","Icecave\/Duct\/TokenStreamParser.html","",
+                [        ]],["TokenStreamParser","Icecave\/Duct\/TokenStreamParser.html"," < EventEmitter",
                 [        ]],["TokenType","Icecave\/Duct\/TokenType.html"," < Enumeration",
                 [        ]]        ]]        ]]        ]
 

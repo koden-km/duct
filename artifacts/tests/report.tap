@@ -78,37 +78,56 @@ ok 76 - Icecave\Duct\LexerTest::testLexWithSingleToken with data set #46 ('"\\r"
 ok 77 - Icecave\Duct\LexerTest::testLexWithSingleToken with data set #47 ('"\\t"', Icecave\Duct\Token)
 ok 78 - Icecave\Duct\LexerTest::testLexWithSingleToken with data set #48 ('"\\u00a9"', Icecave\Duct\Token)
 ok 79 - Icecave\Duct\LexerTest::testLexWithSingleToken with data set #49 ('"\\ud834\\udD1E"', Icecave\Duct\Token)
-ok 80 - Icecave\Duct\ParserTest::testParse with data set #0 ('{}')
-ok 81 - Icecave\Duct\ParserTest::testParse with data set #1 ('[]')
-ok 82 - Icecave\Duct\ParserTest::testParse with data set #2 ('{ "a" : 1, "b" : 2, "c" : 3 }')
-ok 83 - Icecave\Duct\ParserTest::testParse with data set #3 ('{ "a" : 1, "nested" : { "b" : 2, "c" : 3, "d" : 4 }, "e" : 5 }')
-ok 84 - Icecave\Duct\ParserTest::testParse with data set #4 ('[ 1, 2, 3 ]')
-ok 85 - Icecave\Duct\ParserTest::testParse with data set #5 ('[ 1, [ 2, 3, 4 ], 5 ]')
-ok 86 - Icecave\Duct\TokenStreamParserTest::testFinalizeFailsWithPartialObject
-ok 87 - Icecave\Duct\TokenStreamParserTest::testFinalizeFailsWithPartialArray
-ok 88 - Icecave\Duct\TokenStreamParserTest::testFeedFailsOnNonStringKey
-ok 89 - Icecave\Duct\TokenStreamParserTest::testFeedFailsUnexpectedTokenAfterObjectKey
-ok 90 - Icecave\Duct\TokenStreamParserTest::testFeedFailsUnexpectedTokenAfterObjectValue
-ok 91 - Icecave\Duct\TokenStreamParserTest::testFeedFailsUnexpectedTokenAfterArrayValue
-ok 92 - Icecave\Duct\TokenStreamParserTest::testFeedFailsOnInvalidStartingToken with data set #0 ('}')
-ok 93 - Icecave\Duct\TokenStreamParserTest::testFeedFailsOnInvalidStartingToken with data set #1 (']')
-ok 94 - Icecave\Duct\TokenStreamParserTest::testFeedFailsOnInvalidStartingToken with data set #2 (':')
-ok 95 - Icecave\Duct\TokenStreamParserTest::testFeedFailsOnInvalidStartingToken with data set #3 (',')
-ok 96 - Icecave\Duct\TokenStreamParserTest::testParse with data set #0 (array(1), 1)
-ok 97 - Icecave\Duct\TokenStreamParserTest::testParse with data set #1 (array(1.1), 1.1)
-ok 98 - Icecave\Duct\TokenStreamParserTest::testParse with data set #2 (array(true), true)
-ok 99 - Icecave\Duct\TokenStreamParserTest::testParse with data set #3 (array(false), false)
-ok 100 - Icecave\Duct\TokenStreamParserTest::testParse with data set #4 (array(NULL), NULL)
-ok 101 - Icecave\Duct\TokenStreamParserTest::testParse with data set #5 (array('foo'), 'foo')
-ok 102 - Icecave\Duct\TokenStreamParserTest::testParse with data set #6 (array('[', ']'), array())
-ok 103 - Icecave\Duct\TokenStreamParserTest::testParse with data set #7 (array('[', 1, ']'), array(1))
-ok 104 - Icecave\Duct\TokenStreamParserTest::testParse with data set #8 (array('[', 1, ',', 2, ',', 3, ']'), array(1, 2, 3))
-ok 105 - Icecave\Duct\TokenStreamParserTest::testParse with data set #9 (array('[', '[', ']', ']'), array(array()))
-ok 106 - Icecave\Duct\TokenStreamParserTest::testParse with data set #10 (array('[', '{', '}', ']'), array(stdClass))
-ok 107 - Icecave\Duct\TokenStreamParserTest::testParse with data set #11 (array('{', '}'), stdClass)
-ok 108 - Icecave\Duct\TokenStreamParserTest::testParse with data set #12 (array('{', 'k1', ':', 1, '}'), stdClass)
-ok 109 - Icecave\Duct\TokenStreamParserTest::testParse with data set #13 (array('{', 'k1', ':', 1, ',', 'k2', ':', 2, ',', 'k3', ':', 3, '}'), stdClass)
-ok 110 - Icecave\Duct\TokenStreamParserTest::testParse with data set #14 (array('{', 'k1', ':', '{', '}', '}'), stdClass)
-ok 111 - Icecave\Duct\TokenStreamParserTest::testParse with data set #15 (array('{', 'k1', ':', '{', 'k2', ':', '{', '}', '}', '}'), stdClass)
-ok 112 - Icecave\Duct\TokenStreamParserTest::testParse with data set #16 (array('{', 'k1', ':', '[', 1, ',', 2, ']', '}'), stdClass)
-1..112
+ok 80 - Icecave\Duct\ParserTest::testParseWithConstructorDefaults
+ok 81 - Icecave\Duct\ParserTest::testParse with data set #0 ('{}')
+ok 82 - Icecave\Duct\ParserTest::testParse with data set #1 ('[]')
+ok 83 - Icecave\Duct\ParserTest::testParse with data set #2 ('{ "a" : 1, "b" : 2, "c" : 3 }')
+ok 84 - Icecave\Duct\ParserTest::testParse with data set #3 ('{ "a" : 1, "nested" : { "b" : 2, "c" : 3, "d" : 4 }, "e" : 5 }')
+ok 85 - Icecave\Duct\ParserTest::testParse with data set #4 ('[ 1, 2, 3 ]')
+ok 86 - Icecave\Duct\ParserTest::testParse with data set #5 ('[ 1, [ 2, 3, 4 ], 5 ]')
+ok 87 - Icecave\Duct\ParserTest::testOn
+ok 88 - Icecave\Duct\ParserTest::testOnce
+ok 89 - Icecave\Duct\ParserTest::testRemoveListener
+ok 90 - Icecave\Duct\ParserTest::testRemoveAllListeners
+ok 91 - Icecave\Duct\ParserTest::testRemoveAllListenersAllEvents
+ok 92 - Icecave\Duct\ParserTest::testListeners
+ok 93 - Icecave\Duct\ParserTest::testEmit
+ok 94 - Icecave\Duct\TokenStreamParserTest::testFinalizeFailsWithPartialObject
+ok 95 - Icecave\Duct\TokenStreamParserTest::testFinalizeFailsWithPartialArray
+ok 96 - Icecave\Duct\TokenStreamParserTest::testFeedFailsOnNonStringKey
+ok 97 - Icecave\Duct\TokenStreamParserTest::testFeedFailsUnexpectedTokenAfterObjectKey
+ok 98 - Icecave\Duct\TokenStreamParserTest::testFeedFailsUnexpectedTokenAfterObjectValue
+ok 99 - Icecave\Duct\TokenStreamParserTest::testFeedFailsUnexpectedTokenAfterArrayValue
+ok 100 - Icecave\Duct\TokenStreamParserTest::testFeedFailsOnInvalidStartingToken with data set #0 ('}')
+ok 101 - Icecave\Duct\TokenStreamParserTest::testFeedFailsOnInvalidStartingToken with data set #1 (']')
+ok 102 - Icecave\Duct\TokenStreamParserTest::testFeedFailsOnInvalidStartingToken with data set #2 (':')
+ok 103 - Icecave\Duct\TokenStreamParserTest::testFeedFailsOnInvalidStartingToken with data set #3 (',')
+ok 104 - Icecave\Duct\TokenStreamParserTest::testParse with data set #0 (array(1), 1)
+ok 105 - Icecave\Duct\TokenStreamParserTest::testParse with data set #1 (array(1.1), 1.1)
+ok 106 - Icecave\Duct\TokenStreamParserTest::testParse with data set #2 (array(true), true)
+ok 107 - Icecave\Duct\TokenStreamParserTest::testParse with data set #3 (array(false), false)
+ok 108 - Icecave\Duct\TokenStreamParserTest::testParse with data set #4 (array(NULL), NULL)
+ok 109 - Icecave\Duct\TokenStreamParserTest::testParse with data set #5 (array('foo'), 'foo')
+ok 110 - Icecave\Duct\TokenStreamParserTest::testParse with data set #6 (array('[', ']'), array())
+ok 111 - Icecave\Duct\TokenStreamParserTest::testParse with data set #7 (array('[', 1, ']'), array(1))
+ok 112 - Icecave\Duct\TokenStreamParserTest::testParse with data set #8 (array('[', 1, ',', 2, ',', 3, ']'), array(1, 2, 3))
+ok 113 - Icecave\Duct\TokenStreamParserTest::testParse with data set #9 (array('[', '[', ']', ']'), array(array()))
+ok 114 - Icecave\Duct\TokenStreamParserTest::testParse with data set #10 (array('[', '{', '}', ']'), array(stdClass))
+ok 115 - Icecave\Duct\TokenStreamParserTest::testParse with data set #11 (array('{', '}'), stdClass)
+ok 116 - Icecave\Duct\TokenStreamParserTest::testParse with data set #12 (array('{', 'k1', ':', 1, '}'), stdClass)
+ok 117 - Icecave\Duct\TokenStreamParserTest::testParse with data set #13 (array('{', 'k1', ':', 1, ',', 'k2', ':', 2, ',', 'k3', ':', 3, '}'), stdClass)
+ok 118 - Icecave\Duct\TokenStreamParserTest::testParse with data set #14 (array('{', 'k1', ':', '{', '}', '}'), stdClass)
+ok 119 - Icecave\Duct\TokenStreamParserTest::testParse with data set #15 (array('{', 'k1', ':', '{', 'k2', ':', '{', '}', '}', '}'), stdClass)
+ok 120 - Icecave\Duct\TokenStreamParserTest::testParse with data set #16 (array('{', 'k1', ':', '[', 1, ',', 2, ']', '}'), stdClass)
+ok 121 - Icecave\Duct\TokenStreamParserTest::testParseEvents with data set #0 (array(1), array(array('value', array(1))))
+ok 122 - Icecave\Duct\TokenStreamParserTest::testParseEvents with data set #1 (array(1.1), array(array('value', array(1.1))))
+ok 123 - Icecave\Duct\TokenStreamParserTest::testParseEvents with data set #2 (array(true), array(array('value', array(true))))
+ok 124 - Icecave\Duct\TokenStreamParserTest::testParseEvents with data set #3 (array(false), array(array('value', array(false))))
+ok 125 - Icecave\Duct\TokenStreamParserTest::testParseEvents with data set #4 (array(NULL), array(array('value', array(NULL))))
+ok 126 - Icecave\Duct\TokenStreamParserTest::testParseEvents with data set #5 (array('foo'), array(array('value', array('foo'))))
+ok 127 - Icecave\Duct\TokenStreamParserTest::testParseEvents with data set #6 (array('[', ']'), array(array('array-open'), array('array-close')))
+ok 128 - Icecave\Duct\TokenStreamParserTest::testParseEvents with data set #7 (array('[', 1, ',', 2, ',', 3, ']'), array(array('array-open'), array('value', array(1)), array('value', array(2)), array('value', array(3)), array('array-close')))
+ok 129 - Icecave\Duct\TokenStreamParserTest::testParseEvents with data set #8 (array('[', '{', '}', ']'), array(array('array-open'), array('object-open'), array('object-close'), array('array-close')))
+ok 130 - Icecave\Duct\TokenStreamParserTest::testParseEvents with data set #9 (array('{', '}'), array(array('object-open'), array('object-close')))
+ok 131 - Icecave\Duct\TokenStreamParserTest::testParseEvents with data set #10 (array('{', 'k1', ':', 1, ',', 'k2', ':', 2, '}'), array(array('object-open'), array('object.key', array('k1')), array('value', array(1)), array('object.key', array('k2')), array('value', array(2)), array('object-close')))
+1..131
