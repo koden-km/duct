@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1373278420">
-  <project timestamp="1373278420">
+<coverage generated="1373278846">
+  <project timestamp="1373278846">
     <package name="Icecave\Duct">
       <file name="/home/travis/build/IcecaveStudios/duct/lib/Icecave/Duct/AbstractParser.php">
         <class name="AbstractParser" namespace="Icecave\Duct">
