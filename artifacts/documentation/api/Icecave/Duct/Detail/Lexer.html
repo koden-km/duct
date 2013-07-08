@@ -22,7 +22,7 @@
     <h1><a href="../../../Icecave/Duct/Detail.html">Icecave\Duct\Detail</a>\Lexer</h1>
     </div>
         <div class="content">
-                <p>class    <strong>Lexer</strong></p>
+                <p>class    <strong>Lexer</strong>        extends <abbr title="Evenement\EventEmitter">EventEmitter</abbr></p>
 
             <div class="description">
             <p>Streaming JSON lexer.</p>
@@ -56,16 +56,6 @@
             </tr>
                     <tr>
                 <td class="type">
-                    <abbr title="Icecave\Duct\Detail\Vector&lt;Token&gt;">Vector&lt;Token&gt;</abbr>
-                </td>
-                <td class="last">
-                    <a href="#method_lex">lex</a>(string $buffer)
-                    <p>Tokenize JSON data.</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
                     
                 </td>
                 <td class="last">
@@ -81,16 +71,6 @@
                 <td class="last">
                     <a href="#method_finalize">finalize</a>()
                     <p>Complete tokenization.</p>
-                </td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type">
-                    <abbr title="Icecave\Duct\Detail\Vector&lt;Token&gt;">Vector&lt;Token&gt;</abbr>
-                </td>
-                <td class="last">
-                    <a href="#method_tokens">tokens</a>()
-                    <p>Fetch the tokens produced by the lexer so far and remove them from the internal token sequence.</p>
                 </td>
                 <td></td>
             </tr>
@@ -139,51 +119,8 @@
                     </div>
     </div>
 
-                <h3 id="method_lex">
-        <div class="location">at line 48</div>
-        <code>            public            <abbr title="Icecave\Duct\Detail\Vector&lt;Token&gt;">Vector&lt;Token&gt;</abbr>
-    <strong>lex</strong>(string $buffer)</code>
-    </h3>
-    <div class="details">
-        <p>Tokenize JSON data.</p>
-        <p></p>
-        <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table>
-                    <tr>
-                <td>string</td>
-                <td>$buffer</td>
-                <td>The JSON data.</td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table>
-        <tr>
-            <td><abbr title="Icecave\Duct\Detail\Vector&lt;Token&gt;">Vector&lt;Token&gt;</abbr></td>
-            <td>The sequence of tokens representing the JSON data.</td>
-        </tr>
-    </table>
-
-            
-                            <h4>Exceptions</h4>
-
-                    <table>
-                    <tr>
-                <td><abbr title="Exception\LexerException">LexerException</abbr></td>
-                <td>Indicates that the input terminated midway through a token.</td>
-            </tr>
-            </table>
-
-            
-                    </div>
-    </div>
-
                 <h3 id="method_feed">
-        <div class="location">at line 64</div>
+        <div class="location">at line 46</div>
         <code>            public            
     <strong>feed</strong>(string $buffer)</code>
     </h3>
@@ -203,12 +140,21 @@
 
             
             
+                            <h4>Exceptions</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="Exception\LexerException">LexerException</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
             
                     </div>
     </div>
 
                 <h3 id="method_finalize">
-        <div class="location">at line 81</div>
+        <div class="location">at line 63</div>
         <code>            public            
     <strong>finalize</strong>()</code>
     </h3>
@@ -227,30 +173,6 @@
             </tr>
             </table>
 
-            
-                    </div>
-    </div>
-
-                <h3 id="method_tokens">
-        <div class="location">at line 113</div>
-        <code>            public            <abbr title="Icecave\Duct\Detail\Vector&lt;Token&gt;">Vector&lt;Token&gt;</abbr>
-    <strong>tokens</strong>()</code>
-    </h3>
-    <div class="details">
-        <p>Fetch the tokens produced by the lexer so far and remove them from the internal token sequence.</p>
-        <p></p>
-        <div class="tags">
-            
-                            <h4>Return Value</h4>
-
-                    <table>
-        <tr>
-            <td><abbr title="Icecave\Duct\Detail\Vector&lt;Token&gt;">Vector&lt;Token&gt;</abbr></td>
-            <td>The sequence of tokens representing the JSON value.</td>
-        </tr>
-    </table>
-
-            
             
                     </div>
     </div>

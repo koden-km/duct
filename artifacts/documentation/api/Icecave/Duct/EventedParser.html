@@ -47,7 +47,7 @@
             </tr>
                     <tr>
                 <td class="type">
-                    <abbr title="Icecave\Duct\Vector&lt;mixed&gt;">Vector&lt;mixed&gt;</abbr>
+                    
                 </td>
                 <td class="last">
                     <a href="#method_parse">parse</a>(string $buffer)
@@ -73,7 +73,7 @@
                     <a href="#method_feed">feed</a>(string $buffer)
                     <p>Feed (potentially incomplete) JSON data to the parser.</p>
                 </td>
-                <td><small>from&nbsp;<a href="../../Icecave/Duct/AbstractParser.html#method_feed"><abbr title="Icecave\Duct\AbstractParser">AbstractParser</abbr></a></small></td>
+                <td></td>
             </tr>
                     <tr>
                 <td class="type">
@@ -83,7 +83,7 @@
                     <a href="#method_finalize">finalize</a>()
                     <p>Finalize parsing.</p>
                 </td>
-                <td><small>from&nbsp;<a href="../../Icecave/Duct/AbstractParser.html#method_finalize"><abbr title="Icecave\Duct\AbstractParser">AbstractParser</abbr></a></small></td>
+                <td></td>
             </tr>
                     <tr>
                 <td class="type">
@@ -151,7 +151,7 @@
         <h2>Details</h2>
 
                         <h3 id="method___construct">
-        <div class="location">at line 20</div>
+        <div class="location">at line 21</div>
         <code>            public            
     <strong>__construct</strong>(<a href="../../Icecave/Duct/Detail/Lexer.html"><abbr title="Icecave\Duct\Detail\Lexer">Lexer</abbr></a> $lexer = null, <a href="../../Icecave/Duct/Detail/TokenStreamParser.html"><abbr title="Icecave\Duct\Detail\TokenStreamParser">TokenStreamParser</abbr></a> $parser = null)</code>
     </h3>
@@ -181,8 +181,8 @@
     </div>
 
                 <h3 id="method_parse">
-        <div class="location">in <a href="../../Icecave/Duct/AbstractParser.html#method_parse"><abbr title="Icecave\Duct\AbstractParser">AbstractParser</abbr></a> at line 43</div>
-        <code>            public            <abbr title="Icecave\Duct\Vector&lt;mixed&gt;">Vector&lt;mixed&gt;</abbr>
+        <div class="location">in <a href="../../Icecave/Duct/AbstractParser.html#method_parse"><abbr title="Icecave\Duct\AbstractParser">AbstractParser</abbr></a> at line 48</div>
+        <code>            public            
     <strong>parse</strong>(string $buffer)</code>
     </h3>
     <div class="details">
@@ -200,22 +200,13 @@
             </table>
 
             
-                            <h4>Return Value</h4>
-
-                    <table>
-        <tr>
-            <td><abbr title="Icecave\Duct\Vector&lt;mixed&gt;">Vector&lt;mixed&gt;</abbr></td>
-            <td>The sequence of parsed JSON values.</td>
-        </tr>
-    </table>
-
             
                             <h4>Exceptions</h4>
 
                     <table>
                     <tr>
-                <td><abbr title="Exception\ParserException">ParserException</abbr></td>
-                <td>Indicates that the JSON stream terminated midway through a JSON value.</td>
+                <td><abbr title="Exception\SyntaxExceptionInterface">SyntaxExceptionInterface</abbr></td>
+                <td></td>
             </tr>
             </table>
 
@@ -224,7 +215,7 @@
     </div>
 
                 <h3 id="method_reset">
-        <div class="location">in <a href="../../Icecave/Duct/AbstractParser.html#method_reset"><abbr title="Icecave\Duct\AbstractParser">AbstractParser</abbr></a> at line 55</div>
+        <div class="location">in <a href="../../Icecave/Duct/AbstractParser.html#method_reset"><abbr title="Icecave\Duct\AbstractParser">AbstractParser</abbr></a> at line 60</div>
         <code>            public            
     <strong>reset</strong>()</code>
     </h3>
@@ -239,7 +230,7 @@
     </div>
 
                 <h3 id="method_feed">
-        <div class="location">in <a href="../../Icecave/Duct/AbstractParser.html#method_feed"><abbr title="Icecave\Duct\AbstractParser">AbstractParser</abbr></a> at line 68</div>
+        <div class="location">at line 34</div>
         <code>            public            
     <strong>feed</strong>(string $buffer)</code>
     </h3>
@@ -259,12 +250,21 @@
 
             
             
+                            <h4>Exceptions</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="Exception\SyntaxExceptionInterface">SyntaxExceptionInterface</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
             
                     </div>
     </div>
 
                 <h3 id="method_finalize">
-        <div class="location">in <a href="../../Icecave/Duct/AbstractParser.html#method_finalize"><abbr title="Icecave\Duct\AbstractParser">AbstractParser</abbr></a> at line 81</div>
+        <div class="location">at line 50</div>
         <code>            public            
     <strong>finalize</strong>()</code>
     </h3>
@@ -278,8 +278,8 @@
 
                     <table>
                     <tr>
-                <td><abbr title="Exception\ParserException">ParserException</abbr></td>
-                <td>Indicates that the JSON stream terminated midway through a JSON value.</td>
+                <td><abbr title="Exception\SyntaxExceptionInterface">SyntaxExceptionInterface</abbr></td>
+                <td></td>
             </tr>
             </table>
 
@@ -288,7 +288,7 @@
     </div>
 
                 <h3 id="method_on">
-        <div class="location">at line 31</div>
+        <div class="location">at line 65</div>
         <code>            public            
     <strong>on</strong>(string $event, <abbr title="Icecave\Duct\callable">callable</abbr> $listener)</code>
     </h3>
@@ -318,7 +318,7 @@
     </div>
 
                 <h3 id="method_once">
-        <div class="location">at line 42</div>
+        <div class="location">at line 76</div>
         <code>            public            
     <strong>once</strong>(string $event, <abbr title="Icecave\Duct\callable">callable</abbr> $listener)</code>
     </h3>
@@ -348,7 +348,7 @@
     </div>
 
                 <h3 id="method_removeListener">
-        <div class="location">at line 53</div>
+        <div class="location">at line 87</div>
         <code>            public            
     <strong>removeListener</strong>(string $event, <abbr title="Icecave\Duct\callable">callable</abbr> $listener)</code>
     </h3>
@@ -378,7 +378,7 @@
     </div>
 
                 <h3 id="method_removeAllListeners">
-        <div class="location">at line 63</div>
+        <div class="location">at line 97</div>
         <code>            public            
     <strong>removeAllListeners</strong>(string|null $event = null)</code>
     </h3>
@@ -403,7 +403,7 @@
     </div>
 
                 <h3 id="method_listeners">
-        <div class="location">at line 75</div>
+        <div class="location">at line 109</div>
         <code>            public            <abbr title="Icecave\Duct\array&lt;callable&gt;">array&lt;callable&gt;</abbr>
     <strong>listeners</strong>(string $event)</code>
     </h3>
@@ -437,7 +437,7 @@
     </div>
 
                 <h3 id="method_emit">
-        <div class="location">at line 86</div>
+        <div class="location">at line 120</div>
         <code>            public            
     <strong>emit</strong>(string $event, array $arguments = array())</code>
     </h3>

@@ -46,7 +46,7 @@
             </tr>
                     <tr>
                 <td class="type">
-                    <abbr title="Icecave\Duct\Vector&lt;mixed&gt;">Vector&lt;mixed&gt;</abbr>
+                    
                 </td>
                 <td class="last">
                     <a href="#method_parse">parse</a>(string $buffer)
@@ -90,7 +90,7 @@
         <h2>Details</h2>
 
                         <h3 id="method___construct">
-        <div class="location">at line 19</div>
+        <div class="location">at line 20</div>
         <code>            public            
     <strong>__construct</strong>(<a href="../../Icecave/Duct/Detail/Lexer.html"><abbr title="Icecave\Duct\Detail\Lexer">Lexer</abbr></a> $lexer = null, <a href="../../Icecave/Duct/Detail/TokenStreamParser.html"><abbr title="Icecave\Duct\Detail\TokenStreamParser">TokenStreamParser</abbr></a> $parser = null)</code>
     </h3>
@@ -120,8 +120,8 @@
     </div>
 
                 <h3 id="method_parse">
-        <div class="location">at line 43</div>
-        <code>            public            <abbr title="Icecave\Duct\Vector&lt;mixed&gt;">Vector&lt;mixed&gt;</abbr>
+        <div class="location">at line 48</div>
+        <code>            public            
     <strong>parse</strong>(string $buffer)</code>
     </h3>
     <div class="details">
@@ -139,22 +139,13 @@
             </table>
 
             
-                            <h4>Return Value</h4>
-
-                    <table>
-        <tr>
-            <td><abbr title="Icecave\Duct\Vector&lt;mixed&gt;">Vector&lt;mixed&gt;</abbr></td>
-            <td>The sequence of parsed JSON values.</td>
-        </tr>
-    </table>
-
             
                             <h4>Exceptions</h4>
 
                     <table>
                     <tr>
-                <td><abbr title="Exception\ParserException">ParserException</abbr></td>
-                <td>Indicates that the JSON stream terminated midway through a JSON value.</td>
+                <td><abbr title="Exception\SyntaxExceptionInterface">SyntaxExceptionInterface</abbr></td>
+                <td></td>
             </tr>
             </table>
 
@@ -163,7 +154,7 @@
     </div>
 
                 <h3 id="method_reset">
-        <div class="location">at line 55</div>
+        <div class="location">at line 60</div>
         <code>            public            
     <strong>reset</strong>()</code>
     </h3>
@@ -178,7 +169,7 @@
     </div>
 
                 <h3 id="method_feed">
-        <div class="location">at line 68</div>
+        <div class="location">at line 74</div>
         <code>            public            
     <strong>feed</strong>(string $buffer)</code>
     </h3>
@@ -198,12 +189,21 @@
 
             
             
+                            <h4>Exceptions</h4>
+
+                    <table>
+                    <tr>
+                <td><abbr title="Exception\SyntaxExceptionInterface">SyntaxExceptionInterface</abbr></td>
+                <td></td>
+            </tr>
+            </table>
+
             
                     </div>
     </div>
 
                 <h3 id="method_finalize">
-        <div class="location">at line 81</div>
+        <div class="location">at line 91</div>
         <code>            public            
     <strong>finalize</strong>()</code>
     </h3>
@@ -217,8 +217,8 @@
 
                     <table>
                     <tr>
-                <td><abbr title="Exception\ParserException">ParserException</abbr></td>
-                <td>Indicates that the JSON stream terminated midway through a JSON value.</td>
+                <td><abbr title="Exception\SyntaxExceptionInterface">SyntaxExceptionInterface</abbr></td>
+                <td></td>
             </tr>
             </table>
 

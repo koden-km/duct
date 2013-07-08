@@ -116,18 +116,24 @@ ok 114 - Icecave\Duct\Detail\TokenStreamParserTest::testParseEvents with data se
 ok 115 - Icecave\Duct\Detail\TokenStreamParserTest::testParseEvents with data set #8 (array('[', '{', '}', ']'), array(array('array-open'), array('object-open'), array('object-close'), array('array-close')))
 ok 116 - Icecave\Duct\Detail\TokenStreamParserTest::testParseEvents with data set #9 (array('{', '}'), array(array('object-open'), array('object-close')))
 ok 117 - Icecave\Duct\Detail\TokenStreamParserTest::testParseEvents with data set #10 (array('{', 'k1', ':', 1, ',', 'k2', ':', 2, '}'), array(array('object-open'), array('object.key', array('k1')), array('value', array(1)), array('object.key', array('k2')), array('value', array(2)), array('object-close')))
-ok 118 - Icecave\Duct\EventedParserTest::testOn
-ok 119 - Icecave\Duct\EventedParserTest::testOnce
-ok 120 - Icecave\Duct\EventedParserTest::testRemoveListener
-ok 121 - Icecave\Duct\EventedParserTest::testRemoveAllListeners
-ok 122 - Icecave\Duct\EventedParserTest::testRemoveAllListenersAllEvents
-ok 123 - Icecave\Duct\EventedParserTest::testListeners
-ok 124 - Icecave\Duct\EventedParserTest::testEmit
-ok 125 - Icecave\Duct\ParserTest::testParseWithConstructorDefaults
-ok 126 - Icecave\Duct\ParserTest::testParse with data set #0 ('{}')
-ok 127 - Icecave\Duct\ParserTest::testParse with data set #1 ('[]')
-ok 128 - Icecave\Duct\ParserTest::testParse with data set #2 ('{ "a" : 1, "b" : 2, "c" : 3 }')
-ok 129 - Icecave\Duct\ParserTest::testParse with data set #3 ('{ "a" : 1, "nested" : { "b" : 2, "c" : 3, "d" : 4 }, "e" : 5 }')
-ok 130 - Icecave\Duct\ParserTest::testParse with data set #4 ('[ 1, 2, 3 ]')
-ok 131 - Icecave\Duct\ParserTest::testParse with data set #5 ('[ 1, [ 2, 3, 4 ], 5 ]')
-1..131
+ok 118 - Icecave\Duct\EventedParserTest::testFeed
+ok 119 - Icecave\Duct\EventedParserTest::testFeedFailure
+ok 120 - Icecave\Duct\EventedParserTest::testFinalize
+ok 121 - Icecave\Duct\EventedParserTest::testFinalizeFailure
+ok 122 - Icecave\Duct\EventedParserTest::testOn
+ok 123 - Icecave\Duct\EventedParserTest::testOnce
+ok 124 - Icecave\Duct\EventedParserTest::testRemoveListener
+ok 125 - Icecave\Duct\EventedParserTest::testRemoveAllListeners
+ok 126 - Icecave\Duct\EventedParserTest::testRemoveAllListenersAllEvents
+ok 127 - Icecave\Duct\EventedParserTest::testListeners
+ok 128 - Icecave\Duct\EventedParserTest::testEmit
+ok 129 - Icecave\Duct\ParserTest::testParseWithConstructorDefaults
+ok 130 - Icecave\Duct\ParserTest::testFeedFailure
+ok 131 - Icecave\Duct\ParserTest::testFinalizeFailure
+ok 132 - Icecave\Duct\ParserTest::testParse with data set #0 ('{}')
+ok 133 - Icecave\Duct\ParserTest::testParse with data set #1 ('[]')
+ok 134 - Icecave\Duct\ParserTest::testParse with data set #2 ('{ "a" : 1, "b" : 2, "c" : 3 }')
+ok 135 - Icecave\Duct\ParserTest::testParse with data set #3 ('{ "a" : 1, "nested" : { "b" : 2, "c" : 3, "d" : 4 }, "e" : 5 }')
+ok 136 - Icecave\Duct\ParserTest::testParse with data set #4 ('[ 1, 2, 3 ]')
+ok 137 - Icecave\Duct\ParserTest::testParse with data set #5 ('[ 1, [ 2, 3, 4 ], 5 ]')
+1..137

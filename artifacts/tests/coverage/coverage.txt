@@ -1,21 +1,21 @@
 
 
 Code Coverage Report 
-  2013-07-08 02:24:24
+  2013-07-08 10:13:40
 
  Summary: 
   Classes: 100.00% (11/11)
   Methods: 100.00% (66/66)
-  Lines:   100.00% (442/442)
+  Lines:   100.00% (450/450)
 
 \Icecave\Duct::AbstractParser
-  Methods: 100.00% ( 5/ 5)   Lines: 100.00% ( 28/ 28)
+  Methods: 100.00% ( 5/ 5)   Lines: 100.00% ( 36/ 36)
 \Icecave\Duct::EventedParser
-  Methods: 100.00% ( 7/ 7)   Lines: 100.00% ( 16/ 16)
+  Methods: 100.00% ( 9/ 9)   Lines: 100.00% ( 26/ 26)
 \Icecave\Duct::Parser
   Methods: 100.00% ( 3/ 3)   Lines: 100.00% ( 15/ 15)
 \Icecave\Duct\Detail::Lexer
-  Methods: 100.00% (28/28)   Lines: 100.00% (236/236)
+  Methods: 100.00% (26/26)   Lines: 100.00% (226/226)
 \Icecave\Duct\Detail::Token
   Methods: 100.00% ( 5/ 5)   Lines: 100.00% ( 18/ 18)
 \Icecave\Duct\Detail::TokenStreamParser
