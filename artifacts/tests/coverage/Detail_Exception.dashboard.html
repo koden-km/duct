@@ -2,7 +2,7 @@
 <html lang="en">
  <head>
   <meta charset="UTF-8">
-  <title>Dashboard for /home/travis/build/IcecaveStudios/duct/lib/Icecave/Duct</title>
+  <title>Dashboard for /home/travis/build/IcecaveStudios/duct/lib/Icecave/Duct/Detail/Exception</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
@@ -17,7 +17,9 @@
     <div class="row">
      <div class="span12">
       <ul class="breadcrumb">
-        <li><a href="index.html">/home/travis/build/IcecaveStudios/duct/lib/Icecave/Duct</a></li>
+        <li><a href="index.html">/home/travis/build/IcecaveStudios/duct/lib/Icecave/Duct</a> <span class="divider">/</span></li>
+        <li><a href="Detail.html">Detail</a> <span class="divider">/</span></li>
+        <li><a href="Detail_Exception.html">Exception</a></li>
         <li class="active">(Dashboard)</li>
 
       </ul>
@@ -81,7 +83,7 @@ $(document).ready(function() {
    labels: {style: {fontSize: '8px'}},
   },
   series: [{
-   data: [0,0,0,0,0,0,0,0,0,0,0,11]
+   data: [0,0,0,0,0,0,0,0,0,0,0,2]
   }],
  });
 
@@ -107,7 +109,7 @@ $(document).ready(function() {
    }
   },
   series: [{
-   data: [[100,7,"<a href=\"AbstractParser.php.html#13\">AbstractParser<\/a>"],[100,0,"<a href=\"Detail_Exception_LexerException.php.html#7\">LexerException<\/a>"],[100,0,"<a href=\"Detail_Exception_ParserException.php.html#7\">ParserException<\/a>"],[100,99,"<a href=\"Detail_Lexer.php.html#12\">Lexer<\/a>"],[100,0,"<a href=\"Detail_LexerState.php.html#6\">LexerState<\/a>"],[100,0,"<a href=\"Detail_ParserState.php.html#6\">ParserState<\/a>"],[100,9,"<a href=\"Detail_Token.php.html#9\">Token<\/a>"],[100,55,"<a href=\"Detail_TokenStreamParser.php.html#14\">TokenStreamParser<\/a>"],[100,0,"<a href=\"Detail_TokenType.php.html#6\">TokenType<\/a>"],[100,7,"<a href=\"EventedParser.php.html#14\">EventedParser<\/a>"],[100,3,"<a href=\"Parser.php.html#14\">Parser<\/a>"]],
+   data: [[100,0,"<a href=\"Detail_Exception_LexerException.php.html#7\">LexerException<\/a>"],[100,0,"<a href=\"Detail_Exception_ParserException.php.html#7\">ParserException<\/a>"]],
    marker: {
     symbol: 'diamond'
    }

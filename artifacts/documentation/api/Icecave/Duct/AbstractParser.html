@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="robots" content="index, follow, all" />
-        <title>Icecave\Duct\TokenStreamParser | Duct API</title>
+        <title>Icecave\Duct\AbstractParser | Duct API</title>
                     <link rel="stylesheet" type="text/css" href="../../stylesheet.css">
                             </head>
         <body id="class">
@@ -19,14 +19,14 @@
         <div id="title">Duct API</div>
 
             <div class="type">Class</div>
-    <h1><a href="../../Icecave/Duct.html">Icecave\Duct</a>\TokenStreamParser</h1>
+    <h1><a href="../../Icecave/Duct.html">Icecave\Duct</a>\AbstractParser</h1>
     </div>
         <div class="content">
-                <p>class    <strong>TokenStreamParser</strong>        extends <abbr title="Evenement\EventEmitter">EventEmitter</abbr></p>
+                <p>abstract class    <strong>AbstractParser</strong></p>
 
             <div class="description">
-            <p>Streaming token parser.</p>
-            <p>Converts incoming streams of JSON tokens into PHP values.</p>
+            <p>Streaming JSON parser.</p>
+            <p>Converts incoming streams of JSON data into PHP values.</p>
         </div>
     
     
@@ -39,7 +39,7 @@
                     
                 </td>
                 <td class="last">
-                    <a href="#method___construct">__construct</a>()
+                    <a href="#method___construct">__construct</a>(<a href="../../Icecave/Duct/Detail/Lexer.html"><abbr title="Icecave\Duct\Detail\Lexer">Lexer</abbr></a> $lexer = null, <a href="../../Icecave/Duct/Detail/TokenStreamParser.html"><abbr title="Icecave\Duct\Detail\TokenStreamParser">TokenStreamParser</abbr></a> $parser = null)
                     <p></p>
                 </td>
                 <td></td>
@@ -49,8 +49,8 @@
                     <abbr title="Icecave\Duct\Vector&lt;mixed&gt;">Vector&lt;mixed&gt;</abbr>
                 </td>
                 <td class="last">
-                    <a href="#method_parse">parse</a>(<abbr title="Icecave\Duct\mixed&lt;Token&gt;">mixed&lt;Token&gt;</abbr> $tokens)
-                    <p>Parse a stream of tokens representing one or more complete JSON values.</p>
+                    <a href="#method_parse">parse</a>(string $buffer)
+                    <p>Parse one or more complete JSON values.</p>
                 </td>
                 <td></td>
             </tr>
@@ -69,8 +69,8 @@
                     
                 </td>
                 <td class="last">
-                    <a href="#method_feed">feed</a>(<abbr title="Icecave\Duct\mixed&lt;Token&gt;">mixed&lt;Token&gt;</abbr> $tokens)
-                    <p>Feed tokens to the parser.</p>
+                    <a href="#method_feed">feed</a>(string $buffer)
+                    <p>Feed (potentially incomplete) JSON data to the parser.</p>
                 </td>
                 <td></td>
             </tr>
@@ -84,30 +84,35 @@
                 </td>
                 <td></td>
             </tr>
-                    <tr>
-                <td class="type">
-                    <abbr title="Icecave\Duct\Vector&lt;mixed&gt;">Vector&lt;mixed&gt;</abbr>
-                </td>
-                <td class="last">
-                    <a href="#method_values">values</a>()
-                    <p>Fetch the values produced by the parser so far and remove them from the internal value sequence.</p>
-                </td>
-                <td></td>
-            </tr>
             </table>
 
 
         <h2>Details</h2>
 
                         <h3 id="method___construct">
-        <div class="location">at line 17</div>
+        <div class="location">at line 19</div>
         <code>            public            
-    <strong>__construct</strong>()</code>
+    <strong>__construct</strong>(<a href="../../Icecave/Duct/Detail/Lexer.html"><abbr title="Icecave\Duct\Detail\Lexer">Lexer</abbr></a> $lexer = null, <a href="../../Icecave/Duct/Detail/TokenStreamParser.html"><abbr title="Icecave\Duct\Detail\TokenStreamParser">TokenStreamParser</abbr></a> $parser = null)</code>
     </h3>
     <div class="details">
         <p></p>
         <p></p>
         <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table>
+                    <tr>
+                <td><a href="../../Icecave/Duct/Detail/Lexer.html"><abbr title="Icecave\Duct\Detail\Lexer">Lexer</abbr></a></td>
+                <td>$lexer</td>
+                <td>The lexer to use for tokenization, or NULL to use the default UTF-8 lexer.</td>
+            </tr>
+                    <tr>
+                <td><a href="../../Icecave/Duct/Detail/TokenStreamParser.html"><abbr title="Icecave\Duct\Detail\TokenStreamParser">TokenStreamParser</abbr></a></td>
+                <td>$parser</td>
+                <td>The token-stream parser to use for converting tokens into PHP values, or null to use the default.</td>
+            </tr>
+            </table>
+
             
             
             
@@ -115,21 +120,21 @@
     </div>
 
                 <h3 id="method_parse">
-        <div class="location">at line 32</div>
+        <div class="location">at line 43</div>
         <code>            public            <abbr title="Icecave\Duct\Vector&lt;mixed&gt;">Vector&lt;mixed&gt;</abbr>
-    <strong>parse</strong>(<abbr title="Icecave\Duct\mixed&lt;Token&gt;">mixed&lt;Token&gt;</abbr> $tokens)</code>
+    <strong>parse</strong>(string $buffer)</code>
     </h3>
     <div class="details">
-        <p>Parse a stream of tokens representing one or more complete JSON values.</p>
+        <p>Parse one or more complete JSON values.</p>
         <p></p>
         <div class="tags">
                             <h4>Parameters</h4>
 
                     <table>
                     <tr>
-                <td><abbr title="Icecave\Duct\mixed&lt;Token&gt;">mixed&lt;Token&gt;</abbr></td>
-                <td>$tokens</td>
-                <td>The stream of tokens to parse.</td>
+                <td>string</td>
+                <td>$buffer</td>
+                <td>The JSON data.</td>
             </tr>
             </table>
 
@@ -149,7 +154,7 @@
                     <table>
                     <tr>
                 <td><abbr title="Exception\ParserException">ParserException</abbr></td>
-                <td>Indicates that the token stream terminated midway through a JSON value.</td>
+                <td>Indicates that the JSON stream terminated midway through a JSON value.</td>
             </tr>
             </table>
 
@@ -158,7 +163,7 @@
     </div>
 
                 <h3 id="method_reset">
-        <div class="location">at line 46</div>
+        <div class="location">at line 55</div>
         <code>            public            
     <strong>reset</strong>()</code>
     </h3>
@@ -173,21 +178,21 @@
     </div>
 
                 <h3 id="method_feed">
-        <div class="location">at line 59</div>
+        <div class="location">at line 68</div>
         <code>            public            
-    <strong>feed</strong>(<abbr title="Icecave\Duct\mixed&lt;Token&gt;">mixed&lt;Token&gt;</abbr> $tokens)</code>
+    <strong>feed</strong>(string $buffer)</code>
     </h3>
     <div class="details">
-        <p>Feed tokens to the parser.</p>
+        <p>Feed (potentially incomplete) JSON data to the parser.</p>
         <p></p>
         <div class="tags">
                             <h4>Parameters</h4>
 
                     <table>
                     <tr>
-                <td><abbr title="Icecave\Duct\mixed&lt;Token&gt;">mixed&lt;Token&gt;</abbr></td>
-                <td>$tokens</td>
-                <td>The sequence of tokens.</td>
+                <td>string</td>
+                <td>$buffer</td>
+                <td>The JSON data.</td>
             </tr>
             </table>
 
@@ -198,7 +203,7 @@
     </div>
 
                 <h3 id="method_finalize">
-        <div class="location">at line 73</div>
+        <div class="location">at line 81</div>
         <code>            public            
     <strong>finalize</strong>()</code>
     </h3>
@@ -213,34 +218,10 @@
                     <table>
                     <tr>
                 <td><abbr title="Exception\ParserException">ParserException</abbr></td>
-                <td>Indicates that the token stream terminated midway through a JSON value.</td>
+                <td>Indicates that the JSON stream terminated midway through a JSON value.</td>
             </tr>
             </table>
 
-            
-                    </div>
-    </div>
-
-                <h3 id="method_values">
-        <div class="location">at line 87</div>
-        <code>            public            <abbr title="Icecave\Duct\Vector&lt;mixed&gt;">Vector&lt;mixed&gt;</abbr>
-    <strong>values</strong>()</code>
-    </h3>
-    <div class="details">
-        <p>Fetch the values produced by the parser so far and remove them from the internal value sequence.</p>
-        <p></p>
-        <div class="tags">
-            
-                            <h4>Return Value</h4>
-
-                    <table>
-        <tr>
-            <td><abbr title="Icecave\Duct\Vector&lt;mixed&gt;">Vector&lt;mixed&gt;</abbr></td>
-            <td>The sequence of parsed JSON values.</td>
-        </tr>
-    </table>
-
-            
             
                     </div>
     </div>
