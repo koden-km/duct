@@ -14,6 +14,7 @@ var tree = [["Icecave",,"",
                 [["SyntaxExceptionInterface","Icecave\/Duct\/Exception\/SyntaxExceptionInterface.html","",
                 [        ]]        ]],["AbstractParser","Icecave\/Duct\/AbstractParser.html","",
                 [        ]],["EventedParser","Icecave\/Duct\/EventedParser.html"," < AbstractParser",
+                [        ]],["PackageInfo","Icecave\/Duct\/PackageInfo.html","",
                 [        ]],["Parser","Icecave\/Duct\/Parser.html"," < AbstractParser",
                 [        ]]        ]]        ]]        ]
 
